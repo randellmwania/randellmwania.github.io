@@ -90,3 +90,9 @@ loadMoreBtn.addEventListener("click", () => {
   const nextPageUrl = `${APIURL}&page=${currentPage}`;
   getMovies(nextPageUrl);
 });
+
+document
+  .querySelector(".hamburger-menu")
+  .addEventListener("click", function () {
+    document.querySelector(".menu").classList.toggle("active");
+  });

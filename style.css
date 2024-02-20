@@ -1,13 +1,17 @@
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
+/* Reset */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* Global Styles */
 body {
   background-color: #22254b;
   font-family: "Poppins", sans-serif;
-  margin: 0;
 }
 
 header {
@@ -29,20 +33,18 @@ header {
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-  display: inline;
+  margin-left: 20px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
   font-size: 16px;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -56,6 +58,7 @@ main {
   justify-content: center;
 }
 
+/* Movie Card */
 .movie {
   background-color: #141414;
   border-radius: 8px;
@@ -63,7 +66,8 @@ main {
   overflow: hidden;
   position: relative;
   margin: 1rem;
-  width: 300px;
+  width: 200px;
+  max-width: calc(100% - 2rem);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -73,18 +77,19 @@ main {
 
 .movie img {
   width: 100%;
-  object-fit: contain;
+  height: 280px;
+  object-fit: cover;
   border-bottom: 2px solid #e50914;
 }
 
 .movie-info {
   color: #fff;
-  padding: 1rem;
+  padding: 0.3rem;
 }
 
 .movie-info h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 
 .movie-info span {
@@ -92,14 +97,14 @@ main {
   background-color: #e50914;
   border-radius: 3px;
   font-weight: bold;
-  padding: 0.25rem 0.5rem;
-  margin-top: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  margin-top: 0.1rem;
 }
 
 .overview {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  padding: 1rem;
+  padding: 0.5rem;
   position: absolute;
   max-height: 100%;
   overflow: auto;
@@ -112,13 +117,14 @@ main {
 
 .overview h3 {
   margin-top: 0;
+  font-size: 0.5rem;
 }
 
 .movie:hover .overview {
   transform: translateY(0);
 }
 
-/* Styles for search */
+/* Search */
 .search {
   background-color: #e50914;
   border: none;
@@ -127,7 +133,9 @@ main {
   font-family: inherit;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .search::placeholder {
@@ -137,4 +145,44 @@ main {
 .search:focus {
   background-color: #fff;
   color: #000;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #141414;
+    padding: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+
+  .menu.active li {
+    margin-bottom: 1rem;
+  }
 }
