@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rayflix</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="rayflix-logo">
+            <a href="index.html"><img src="rayflix-logo.png" alt="Rayflix logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li> <!-- Link to login page -->
+                <li><a href="signup.html">Sign Up</a></li> <!-- Link to signup page -->
+            </ul>
+        </nav>
+        <form id="form">
+            <input type="text" id="search" placeholder="Search" class="search" />
+        </form>
+    </header>
+
+    <main id="main" class="movies-container"></main>
+    <button id="loadMoreBtn" style="display: none;">Load More</button> <!-- Load More button -->
+</body>
+
+</html>
