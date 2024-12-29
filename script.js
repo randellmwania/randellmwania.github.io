@@ -18,20 +18,14 @@ startBtn.addEventListener("click", function () {
   if (countdownEnded) {
     playNewYearMusic(); // Play New Year music when button is clicked after countdown ends
     startBtn.disabled = true; // Disable the button once the music is playing
+  } else {
+    // Play countdown music when clicked (if countdown has started)
+    countdownMusic.play();
   }
 });
 
-// Add a click event listener to the start button to trigger countdown music
-startBtn.addEventListener("click", function () {
-  if (!countdownEnded) {
-    startCountdown(); // Start the countdown music when the button is clicked
-  }
-});
-
-// Start Countdown and Countdown Music
+// Start Countdown without music
 function startCountdown() {
-  countdownMusic.play(); // Play countdown music when the countdown starts
-
   const countdownFunction = setInterval(function () {
     const now = new Date().getTime();
     const distance = newYear - now;
@@ -54,8 +48,6 @@ function startCountdown() {
       showLoveMessage();
       playFireworkSound();
       changeBackgroundColor("#800000"); // Custom background color after countdown
-      countdownMusic.pause(); // Stop countdown music
-      countdownMusic.currentTime = 0; // Reset countdown music
       countdownEnded = true; // Mark countdown as ended
       startBtn.disabled = false; // Enable the button after countdown ends
     }
@@ -107,3 +99,6 @@ function playNewYearMusic() {
 function changeBackgroundColor(color) {
   document.body.style.backgroundColor = color;
 }
+
+// Start countdown when the page loads
+startCountdown();
