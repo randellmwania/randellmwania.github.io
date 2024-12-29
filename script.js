@@ -10,7 +10,7 @@ const fireworkSound = new Audio("firework_sound.mp3"); // Firework sound effect
 fireworkSound.volume = 0.5;
 
 // Set up button state
-let countdownEnded = false; // This should be false initially
+let countdownEnded = false;
 
 // Button to trigger New Year music
 const startBtn = document.getElementById("start-btn");
@@ -21,9 +21,16 @@ startBtn.addEventListener("click", function () {
   }
 });
 
+// Add a click event listener to the start button to trigger countdown music
+startBtn.addEventListener("click", function () {
+  if (!countdownEnded) {
+    startCountdown(); // Start the countdown music when the button is clicked
+  }
+});
+
 // Start Countdown and Countdown Music
 function startCountdown() {
-  countdownMusic.play(); // Play countdown music as soon as countdown starts
+  countdownMusic.play(); // Play countdown music when the countdown starts
 
   const countdownFunction = setInterval(function () {
     const now = new Date().getTime();
@@ -100,6 +107,3 @@ function playNewYearMusic() {
 function changeBackgroundColor(color) {
   document.body.style.backgroundColor = color;
 }
-
-// Start countdown when the page loads
-startCountdown();
