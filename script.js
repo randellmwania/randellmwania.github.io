@@ -10,7 +10,7 @@ const fireworkSound = new Audio("firework_sound.mp3"); // Firework sound effect
 fireworkSound.volume = 0.5;
 
 // Set up button state
-let countdownEnded = false;
+let countdownEnded = false; // This should be false initially
 
 // Button to trigger New Year music
 const startBtn = document.getElementById("start-btn");
