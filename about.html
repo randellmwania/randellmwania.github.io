@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - HungryBirds</title>
+    <meta name="description" content="Learn about HungryBirds, the Angry Birds themed fast food restaurant in Embakasi East, Nairobi.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>" type="image/svg+xml">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>" type="image/svg+xml" sizes="any">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Hungry<span>Birds</span></h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Story</h1>
+            <p>From a simple idea to Nairobi's favorite Angry Birds themed restaurant</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Welcome to HungryBirds</h2>
+                    <p>Founded in 2023, HungryBirds brings the fun and excitement of Angry Birds to the world of fast food. What started as a small food truck in Embakasi East has grown into one of Nairobi's most beloved dining destinations.</p>
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                            <p>To deliver delicious, high-quality fast food with a side of fun, creating memorable dining experiences for families and friends.</p>
+                        </div>
+                        <div class="vision">
+                            <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                            <p>Whether you're a fan of the classic Angry Birds game or just love great food, we've got something for everyone. Our menu combines the best of fast food with the fun and excitement of the Angry Birds universe.</p>
+                            <p>Join us for a meal that's as entertaining as it is delicious!</p>
+                        </div>
+                    </div>
+
+                    <h3>Why Choose Us</h3>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Delicious Food</h4>
+                            <p>Our menu features a variety of delicious options, from juicy burgers to crispy wings, all with our signature Angry Birds twist. We use only the freshest ingredients to create meals that are as fun to eat as they are delicious.</p>                            <p>We use only the freshest ingredients to create mouth-watering dishes that keep our customers coming back for more.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Family Friendly</h4>
+                            <p>Our Angry Birds theme makes us the perfect spot for family outings and kids' birthday parties.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <h4>Quick Delivery</h4>
+                            <p>Fast and reliable delivery service throughout Embakasi East so you can enjoy our food at home.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/restaurant-interior.jpg" alt="HungryBirds Restaurant Interior" onerror="this.src='assets/hero-bg.jpg'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Birds Section -->
+    <section class="birds-section">
+        <div class="container">
+            <h2 class="section-title">Meet the Birds</h2>
+            <p class="section-subtitle">Our feathered friends who make every meal special</p>
+            <div class="birds-grid">
+                <!-- Red Bird -->
+                <div class="bird-card" data-bird="red">
+                    <div class="bird-image">
+                        <img src="assets/redbird.png" alt="Red Bird" class="floating">
+                    </div>
+                    <div class="bird-info">
+                        <h3>Red</h3>
+                        <p class="bird-role">The Leader</p>
+                        <p class="bird-description">Always fired up about our signature dishes, Red makes sure every burger is packed with flavor and attitude.</p>
+                        <div class="bird-stats">
+                            <div class="stat">
+                                <span class="stat-value">Spicy</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill red-stat"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">Popularity</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill red-stat-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yellow Bird -->
+                <div class="bird-card" data-bird="yellow">
+                    <div class="bird-image">
+                        <img src="assets/yellowbird.png" alt="Yellow Bird" class="floating">
+                    </div>
+                    <div class="bird-info">
+                        <h3>Chuck</h3>
+                        <p class="bird-role">The Speedster</p>
+                        <p class="bird-description">Lightning-fast service is Chuck's specialty. He ensures your food arrives hot and fresh, every time!</p>
+                        <div class="bird-stats">
+                            <div class="stat">
+                                <span class="stat-value">Speed</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill yellow-stat"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">Energy</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill yellow-stat-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Black Bird -->
+                <div class="bird-card" data-bird="black">
+                    <div class="bird-image">
+                        <img src="assets/blackbird.png" alt="Black Bird" class="floating">
+                    </div>
+                    <div class="bird-info">
+                        <h3>Bomb</h3>
+                        <p class="bird-role">Delivery Expert</p>
+                        <p class="bird-description">Our speedy delivery specialist! Bomb ensures your food arrives hot and fresh, right to your doorstep in record time.</p>
+                        <div class="bird-stats">
+                            <div class="stat">
+                                <span class="stat-value">Speed</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill black-stat"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">Reliability</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill black-stat-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/team/chef1.jpg" alt="Head Chef" onerror="this.src='assets/placeholder-user.png'">
+                    </div>
+                    <h3>James Kamau</h3>
+                    <p class="position">Head Chef</p>
+                    <p class="bio">With over 15 years of culinary experience, Chef James brings creativity and passion to every dish.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/team/manager.jpg" alt="Restaurant Manager" onerror="this.src='assets/placeholder-user.png'">
+                    </div>
+                    <h3>Sarah Atieno</h3>
+                    <p class="position">Restaurant Manager</p>
+                    <p class="bio">Ensuring every guest has an exceptional dining experience is Sarah's top priority.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/team/owner.jpg" alt="Founder & Owner" onerror="this.src='assets/placeholder-user.png'">
+                    </div>
+                    <h3>David Ochieng</h3>
+                    <p class="position">Founder &amp; Owner</p>
+                    <p class="bio">David combined his love for great food and Angry Birds to create this unique dining experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>The Angry Burger is to die for! My kids love the themed meals and I love the quality of the food.</p>
+                    </div>
+                    <div class="customer">
+                        <img src="assets/testimonials/customer1.jpg" alt="Customer" onerror="this.src='assets/placeholder-user.png'">
+                        <div class="customer-info">
+                            <h4>Grace Mwende</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Best fast food in Embakasi! The wings are always crispy and the service is super fast. Highly recommend!</p>
+                    </div>
+                    <div class="customer">
+                        <img src="assets/testimonials/customer2.jpg" alt="Customer" onerror="this.src='assets/placeholder-user.png'">
+                        <div class="customer-info">
+                            <h4>Brian Otieno</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-grid">
+                <div class="cta-card visit-us">
+                    <div class="cta-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Visit Us Today!</h3>
+                    <p>Experience the best Angry Birds themed dining in Nairobi. Our friendly staff and fun atmosphere make every meal memorable.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html#location" class="btn btn-primary">
+                            <i class="fas fa-map-marker-alt"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+                <div class="cta-card call-us">
+                    <div class="cta-icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <h3>Call to Order</h3>
+                    <p>In the Embakasi area? Call us directly for quick takeaway or delivery!</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+254712345678" class="btn btn-accent">
+                            <i class="fas fa-phone-alt"></i> +254&nbsp;712&nbsp;345&nbsp;678
+                        </a>
+                        <p class="cta-note">Fastest way to order for pickup or delivery!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Hungry<span>Birds</span></h2>
+                    <p>Angry Birds Themed Fast Food</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 07XX&nbsp;XXX&nbsp;XXX</p>
+                    <p><i class="fas fa-envelope"></i> info@hungrybirds.co.ke</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Embakasi East, Nairobi</p>
+                    <p><i class="fas fa-clock"></i> Open: 10:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HungryBirds. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

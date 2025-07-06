@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HungryBirds</title>
+    <meta name="description" content="Get in touch with HungryBirds. Call us, visit our location in Embakasi East, or send us a message.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>" type="image/svg+xml">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>" type="image/svg+xml" sizes="any">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Hungry<span>Birds</span></h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out to us with any questions or feedback.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>Ready to place an order or have questions?</p>
+                        <a href="tel:07XXXXXXX" class="contact-link">
+                            <i class="fas fa-phone"></i> 07XX&nbsp;XXX&nbsp;XXXX&nbsp;XXX
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>We're located in the heart of Embakasi East, Nairobi. Come visit us for a delicious meal!</p>
+                        <button type="button" class="btn btn-primary" id="getDirections">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </button>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>Send us an email for inquiries or feedback</p>
+                        <a href="mailto:info@hungrybirds.co.ke" class="contact-link">
+                            <i class="fas fa-envelope"></i> info@hungrybirds.co.ke
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Chat with us on WhatsApp for quick responses</p>
+                        <a href="https://wa.me/254700000000?text=Hello%20HungryBirds!%20I'd%20like%20to%20place%20an%20order." class="contact-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Chat Now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <p>Have a question or feedback? Fill out the form below and we'll get back to you as soon as possible.</p>
+                    <form id="contactForm" class="contact-form needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required
+                                minlength="2" maxlength="50"
+                                pattern="^[a-zA-Z\s'-]+"
+                                title="Please enter a valid name (letters, spaces, hyphens, and apostrophes only)">
+                            <div class="invalid-feedback">
+                                Please provide a valid name (2-50 characters, letters only).
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                title="Please enter a valid email address">
+                            <div class="invalid-feedback">
+                                Please provide a valid email address.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control"
+                                pattern="[0-9\s]{10,15}"
+                                title="Please enter a valid phone number (10-15 digits)">
+                            <div class="invalid-feedback">
+                                Please provide a valid phone number (10-15 digits).
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">Select a subject</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Catering">Catering</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Complaint">Complaint</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a subject.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" required
+                                minlength="10" maxlength="1000"></textarea>
+                            <div class="invalid-feedback">
+                                Please enter your message (10-1000 characters).
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn w-100">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <div id="map">
+                    <!-- Google Map will be loaded here -->
+                    <img src="assets/map-placeholder.jpg" alt="Map of HungryBirds location" class="map-placeholder">
+                    <div class="map-overlay">
+                        <h3>HungryBirds</h3>
+                        <p>Embakasi East, Nairobi</p>
+                        <p>Open: 10:00 AM - 10:00 PM</p>
+                        <button type="button" class="directions-btn">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="business-hours">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>
+                        <span>Monday - Thursday</span>
+                        <span>10:00 AM - 10:00 PM</span>
+                    </li>
+                    <li>
+                        <span>Friday - Saturday</span>
+                        <span>10:00 AM - 11:00 PM</span>
+                    </li>
+                    <li>
+                        <span>Sunday</span>
+                        <span>11:00 AM - 9:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-1">
+                        What are your opening hours?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We deliver daily from 10:00 AM to 9:30 PM. Last orders for delivery are accepted until 9:00 PM to ensure we can prepare and deliver your food while it's fresh.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        What areas do you deliver to?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We currently deliver to all areas within Embakasi East. If you're unsure whether we deliver to your location, please give us a call and we'll be happy to assist you.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        How can I pay for my order?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept cash on delivery and mobile money payments (M-Pesa). For mobile payments, our agent will provide you with the payment details when your order is confirmed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        How long does delivery take?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Delivery times typically range from 30 to 45 minutes, depending on your location and current order volume. During peak hours, delivery may take up to 60 minutes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        Do you offer catering services?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer catering services for events and parties. Please contact us at least 48 hours in advance with your catering needs, and we'll be happy to provide a customized menu and quote.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-grid">
+                <div class="cta-card visit-us">
+                    <div class="cta-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Visit Us Today!</h3>
+                    <p>Experience the best Angry Birds themed dining in Nairobi. Our friendly staff and fun atmosphere make every meal memorable.</p>
+                    <div class="cta-buttons">
+                        <a href="#location" class="btn btn-primary">
+                            <i class="fas fa-map-marker-alt"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+                <div class="cta-card call-us">
+                    <div class="cta-icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <h3>Call to Order</h3>
+                    <p>In the Embakasi area? Call us directly for quick takeaway or delivery!</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+254712345678" class="btn btn-accent">
+                            <i class="fas fa-phone-alt"></i> +254&nbsp;712&nbsp;345&nbsp;678
+                        </a>
+                        <p class="cta-note">Fastest way to order for pickup or delivery!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Hungry<span>Birds</span></h2>
+                    <p>Angry Birds Themed Fast Food</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 07XX&nbsp;XXX&nbsp;XXX</p>
+                    <p><i class="fas fa-envelope"></i> info@hungrybirds.co.ke</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Embakasi East, Nairobi</p>
+                    <p><i class="fas fa-clock"></i> Open: 10:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HungryBirds. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/form-handler.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

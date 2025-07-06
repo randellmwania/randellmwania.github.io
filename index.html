@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HungryBirds - Angry Birds Themed Fast Food</title>
+    <meta name="description" content="Delicious fast food with an Angry Birds twist! Call now for delivery in Embakasi East, Nairobi.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>" type="image/svg+xml">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html" aria-label="HungryBirds Home">Hungry<span>Birds</span></a></h1>
+            </div>
+            <nav class="nav" aria-label="Main Navigation">
+                <button type="button" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="character red-bird" data-speed="2">
+                <img src="assets/redbird.png" alt="Red Bird" class="floating">
+            </div>
+            <div class="character yellow-bird" data-speed="1.5">
+                <img src="assets/yellowbird.png" alt="Yellow Bird" class="floating">
+            </div>
+            <div class="character black-bird" data-speed="2.5">
+                <img src="assets/blackbird.png" alt="Black Bird" class="floating">
+            </div>
+            <h2>Angry Birds, Hungry Stomachs!</h2>
+            <p>Delicious fast food with an Angry Birds twist</p>
+            <div class="scroll-down">
+                <a href="#menu" class="scroll-link">
+                    <span>View Our Menu</span>
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+        <div class="bird-animation">
+            <!-- Additional animated elements can be added here -->
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-filters">
+                <button type="button" class="filter-btn active" data-category="all">All Items</button>
+                <button type="button" class="filter-btn" data-category="burgers">Burgers</button>
+                <button type="button" class="filter-btn" data-category="wings">Wings</button>
+                <button type="button" class="filter-btn" data-category="combos">Combos</button>
+                <button type="button" class="filter-btn" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu-grid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section id="deals" class="deals-section">
+        <div class="container">
+            <h2 class="section-title">Hot Deals</h2>
+            <div class="deals-carousel">
+                <div class="deal-card">
+                    <div class="deal-tag">Limited Time!</div>
+                    <h3>Angry Meal Deal</h3>
+                    <p>1 Burger + Fries + Drink</p>
+                    <div class="deal-price">KSh 1,200 <span class="original-price">KSh 1,500</span></div>
+                    <div class="countdown" id="deal-countdown">Offer ends in 02:30:00</div>
+                    <a href="tel:07XXXXXXX" class="cta-button">Call&nbsp;to&nbsp;Order&nbsp;Now</a>
+                </div>
+                <!-- More deal cards will be added via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>We Deliver in Embakasi East!</h3>
+                    <div class="hours">
+                        <h4>Opening Hours:</h4>
+                        <p>Monday - Sunday: 10:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="address">
+                        <h4>Our Location:</h4>
+                        <p>Embakasi East, Nairobi</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div id="map">
+                        <!-- Google Maps iframe will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Call Us Now!</h3>
+                    <a href="tel:07XXXXXXX" class="phone-number">
+                        <i class="fas fa-phone"></i> 07XX&nbsp;XXX&nbsp;XXX
+                    </a>
+                    <div class="social-links">
+                        <a href="https://wa.me/254712345678" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <form id="feedback-form" class="feedback-form">
+                    <h3>Send Us Feedback</h3>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder="Your Feedback" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Feedback</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Hungry<span>Birds</span></h2>
+                    <p>Angry Birds Themed Fast Food</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#deals">Deals</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 07XX&nbsp;XXX&nbsp;XXX</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Embakasi East, Nairobi</p>
+                    <p><i class="fas fa-clock"></i> Open: 10:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HungryBirds. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- Google Maps API will be loaded here -->
+</body>
+</html>
