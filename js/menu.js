@@ -12,13 +12,57 @@ document.addEventListener('DOMContentLoaded', function() {
     const orderSidebar = document.querySelector('.order-sidebar');
     const closeOrderBtn = document.querySelector('.close-order');
     const categoryBtns = document.querySelectorAll('.category-btn');
-    const menuItems = document.querySelectorAll('.menu-item');
+    const menuContainer = document.querySelector('.menu-items .container');
+    
+    // Make sure menuItems is available
+    if (!window.menuItems) {
+        console.error('menuItems array not found. Make sure main.js is loaded before menu.js');
+        return;
+    }
+    
+    // Category display names mapping
+    const categoryDisplayNames = {
+        'chicken': 'CHICKEN MEALS',
+        'fries': 'FRIES',
+        'shwarma': 'SHAWARMA FEST',
+        'sides': 'SIDES & SNACKS',
+        'pizza': 'PIZZA FEST',
+        'icecream': 'ICE-CREAM',
+        'smoothies': 'SMOOTHIE FUSION',
+        'juice': 'JUICE',
+        'beverages': 'HOT & COLD BEVERAGES'
+    };
+    
+    // Category icons mapping
+    const categoryIcons = {
+        'chicken': '🍗',
+        'fries': '🍟',
+        'shwarma': '🌯',
+        'sides': '🍛',
+        'pizza': '🍕',
+        'icecream': '🍦',
+        'smoothies': '🥤',
+        'juice': '🍹',
+        'beverages': '☕'
+    };
+    
+    // Notes for specific categories
+    const categoryNotes = {
+        'fries': 'All served with kachumbari – Free',
+        'pizza': 'All Medium – KSh 700',
+        'smoothies': 'Small – KSh 100 | Large – KSh 200',
+        'juice': 'Small – KSh 50 | Large – KSh 100',
+        'beverages': 'Served hot or cold'
+    };
     
     // Initialize the page
     initMenuPage();
     
     // Initialize menu page functionality
     function initMenuPage() {
+        // Clear existing menu items
+        menuContainer.innerHTML = '';
+        
         // Load cart from localStorage if available
         loadCart();
         
@@ -27,6 +71,139 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Initialize menu filtering
         initMenuFiltering();
+        
+        // Get category from URL and filter if needed
+        const urlParams = new URLSearchParams(window.location.search);
+        const category = urlParams.get('category');
+        
+        if (category) {
+            // Filter by category from URL
+            filterMenuItems(category);
+        } else {
+            // Show all items
+            generateMenuItems();
+        }
+    }
+    
+    // Generate menu items from the menuItems array
+    function generateMenuItems(filterCategory = null) {
+        // Clear existing menu items
+        menuContainer.innerHTML = '';
+        
+        // Add 'Show All' button if a category is filtered
+        if (filterCategory) {
+            const showAllBtn = document.createElement('a');
+            showAllBtn.href = 'menu.html';
+            showAllBtn.className = 'show-all-btn';
+            showAllBtn.innerHTML = '<i class="fas fa-arrow-left"></i> Show All Categories';
+            menuContainer.appendChild(showAllBtn);
+        }
+        
+        // Filter items by category if specified
+        const filteredItems = filterCategory 
+            ? window.menuItems.filter(item => item.category === filterCategory)
+            : window.menuItems;
+            
+        // Group items by category
+        const itemsByCategory = {};
+        
+        // Initialize categories
+        Object.keys(categoryDisplayNames).forEach(category => {
+            itemsByCategory[category] = [];
+        });
+        
+        // Group filtered items by category
+        filteredItems.forEach(item => {
+            if (itemsByCategory[item.category]) {
+                itemsByCategory[item.category].push(item);
+            }
+        });
+        
+        // Generate HTML for each category
+        Object.entries(itemsByCategory).forEach(([category, items]) => {
+            if (items.length === 0) return;
+            
+            const categorySection = document.createElement('div');
+            categorySection.className = 'menu-category';
+            categorySection.id = category;
+            
+            // Create category header
+            const categoryHeader = document.createElement('h2');
+            categoryHeader.className = 'category-title';
+            categoryHeader.textContent = `${categoryIcons[category] || '🍽️'} ${categoryDisplayNames[category] || category.toUpperCase()}`;
+            categorySection.appendChild(categoryHeader);
+            
+            // Add category note if exists
+            if (categoryNotes[category]) {
+                const note = document.createElement('p');
+                note.className = 'menu-note';
+                note.textContent = categoryNotes[category];
+                categorySection.appendChild(note);
+            }
+            
+            // Create menu grid
+            const menuGrid = document.createElement('div');
+            menuGrid.className = 'menu-grid';
+            
+            // Add items to grid
+            items.forEach(item => {
+                const menuItem = document.createElement('div');
+                menuItem.className = 'menu-item';
+                menuItem.dataset.category = item.category;
+                
+                // Create image container
+                const itemImage = document.createElement('div');
+                itemImage.className = 'item-image';
+                const img = document.createElement('img');
+                img.src = item.img || 'assets/placeholder-food.jpg';
+                img.alt = item.title;
+                img.loading = 'lazy';
+                itemImage.appendChild(img);
+                
+                const itemDetails = document.createElement('div');
+                itemDetails.className = 'item-details';
+                
+                const itemHeader = document.createElement('div');
+                itemHeader.className = 'item-header';
+                
+                const itemTitle = document.createElement('h3');
+                itemTitle.textContent = item.title;
+                
+                const itemDesc = document.createElement('p');
+                itemDesc.className = 'item-desc';
+                itemDesc.textContent = item.desc || '';
+                
+                const itemFooter = document.createElement('div');
+                itemFooter.className = 'item-footer';
+                
+                const itemPrice = document.createElement('span');
+                itemPrice.className = 'item-price';
+                itemPrice.textContent = `KSh ${item.price.toLocaleString()}`;
+                
+                const addToCartBtn = document.createElement('button');
+                addToCartBtn.type = 'button';
+                addToCartBtn.className = 'add-to-cart';
+                addToCartBtn.dataset.item = item.title;
+                addToCartBtn.dataset.price = item.price;
+                addToCartBtn.innerHTML = '<i class="fas fa-plus"></i> Add to Order';
+                
+                // Append elements
+                itemHeader.appendChild(itemTitle);
+                itemFooter.appendChild(itemPrice);
+                itemFooter.appendChild(addToCartBtn);
+                
+                itemDetails.appendChild(itemHeader);
+                if (item.desc) itemDetails.appendChild(itemDesc);
+                itemDetails.appendChild(itemFooter);
+                
+                menuItem.appendChild(itemImage);
+                menuItem.appendChild(itemDetails);
+                menuGrid.appendChild(menuItem);
+            });
+            
+            categorySection.appendChild(menuGrid);
+            menuContainer.appendChild(categorySection);
+        });
     }
     
     // Set up all event listeners
@@ -77,27 +254,67 @@ document.addEventListener('DOMContentLoaded', function() {
                 filterMenuItems(category);
             });
         });
+        
+        // Initialize with all items showing
+        filterMenuItems('all');
     }
     
     // Filter menu items based on category
     function filterMenuItems(category) {
-        menuItems.forEach(item => {
-            if (category === 'all' || item.getAttribute('data-category') === category) {
-                item.style.display = 'flex';
-            } else {
-                item.style.display = 'none';
+        // Update active state of category buttons
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('data-category') === category) {
+                btn.classList.add('active');
             }
         });
         
-        // Scroll to the first visible category
-        if (category !== 'all') {
-            const firstVisibleCategory = document.querySelector(`.menu-category#${category}`);
-            if (firstVisibleCategory) {
-                firstVisibleCategory.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        } else {
+        // If 'all' or no category, show all items and update URL
+        if (!category || category === 'all') {
+            // Update URL to remove category parameter
+            window.history.pushState({}, '', window.location.pathname);
+            
+            // Show all menu items and categories
+            document.querySelectorAll('.menu-item, .menu-category').forEach(el => {
+                el.style.display = '';
+            });
+            
+            // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
         }
+        
+        // Hide all menu items first
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.style.display = 'none';
+        });
+        
+        // Show only items from the selected category
+        const visibleItems = document.querySelectorAll(`.menu-item[data-category="${category}"]`);
+        visibleItems.forEach(item => {
+            item.style.display = 'flex';
+            
+            // Make sure the parent category is visible
+            let parentCategory = item.closest('.menu-category');
+            if (parentCategory) {
+                parentCategory.style.display = 'block';
+                
+                // Scroll to the category after a short delay
+                setTimeout(() => {
+                    parentCategory.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        });
+        
+        // Hide empty categories
+        document.querySelectorAll('.menu-category').forEach(section => {
+            const hasVisibleItems = section.querySelector('.menu-item[style*="display: flex"]');
+            section.style.display = hasVisibleItems ? 'block' : 'none';
+        });
+        
+        // Update URL with category parameter
+        const newUrl = `${window.location.pathname}?category=${category}`;
+        window.history.pushState({}, '', newUrl);
     }
     
     // Add item to cart

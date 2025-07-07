@@ -1,36 +1,12 @@
 /* About Page Styles */
 
 /* Page Header - Hero Section */
-.page-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('../assets/hero-bg.jpg') no-repeat center center/cover;
-    color: var(--white);
-    text-align: center;
-    padding: 100px 20px;
-    margin-top: 70px;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
 .page-header h1 {
-    font-size: 4rem;
-    margin-bottom: 15px;
-    color: var(--secondary);
-    text-shadow: 2px 2px 0 var(--primary);
-    animation: fadeInDown 1s ease-out;
+    font-size: 4rem; /* Slightly larger for about page */
 }
 
 .page-header p {
-    font-size: 1.4rem;
-    max-width: 700px;
-    margin: 0 auto 20px;
-    color: var(--white);
-    animation: fadeInUp 1s ease-out 0.3s both;
+    font-size: 1.4rem; /* Slightly larger for about page */
 }
 
 /* Meet the Birds Section */

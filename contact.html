@@ -7,8 +7,8 @@
     <meta name="description" content="Get in touch with HungryBirds. Call us, visit our location in Embakasi East, or send us a message.">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome 6 Free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/forms.css">
@@ -26,18 +26,18 @@
                     <h1>Hungry<span>Birds</span></h1>
                 </a>
             </div>
-            <nav class="nav">
-                <ul class="nav-links">
+            <nav class="nav" aria-label="Main Navigation">
+                <button type="button" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <ul class="nav-links" id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </nav>
         </div>
     </header>
@@ -154,8 +154,9 @@
                                 Please enter your message (10-1000 characters).
                             </div>
                         </div>
-                        <button type="submit" class="submit-btn w-100">
+                        <button type="submit" class="btn btn-primary w-100" id="submitBtn">
                             <i class="fas fa-paper-plane"></i> Send Message
+                            <i class="fas fa-spinner fa-spin d-none"></i>
                         </button>
                     </form>
                 </div>
@@ -175,7 +176,7 @@
                         <h3>HungryBirds</h3>
                         <p>Embakasi East, Nairobi</p>
                         <p>Open: 10:00 AM - 10:00 PM</p>
-                        <button type="button" class="directions-btn">
+                        <button type="button" class="btn btn-secondary" id="mapDirectionsBtn">
                             <i class="fas fa-directions"></i> Get Directions
                         </button>
                     </div>
