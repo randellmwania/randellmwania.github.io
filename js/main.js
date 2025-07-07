@@ -470,8 +470,52 @@ window.menuItems = [
     }
 ];
 
+// Handle loading screen
+function initLoadingScreen() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    
+    // If loading screen exists, hide it after page loads
+    if (loadingScreen) {
+        // Show loading screen immediately
+        document.body.style.overflow = 'hidden';
+        
+        // Hide loading screen when everything is loaded
+        window.addEventListener('load', function() {
+            // Add a small delay for better UX
+            setTimeout(function() {
+                loadingScreen.classList.add('hidden');
+                document.body.style.overflow = '';
+                
+                // Remove from DOM after animation completes
+                setTimeout(function() {
+                    if (loadingScreen && loadingScreen.parentNode) {
+                        loadingScreen.remove();
+                    }
+                }, 500);
+            }, 1000); // Minimum show time for better UX
+        });
+        
+        // Fallback in case load event doesn't fire
+        setTimeout(function() {
+            if (loadingScreen && !loadingScreen.classList.contains('hidden')) {
+                loadingScreen.classList.add('hidden');
+                document.body.style.overflow = '';
+                
+                setTimeout(function() {
+                    if (loadingScreen && loadingScreen.parentNode) {
+                        loadingScreen.remove();
+                    }
+                }, 500);
+            }
+        }, 5000); // Maximum loading time before force hide
+    }
+}
+
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize loading screen
+    initLoadingScreen();
+    
     // Mobile menu toggle
     if (hamburger) {
         hamburger.addEventListener('click', function() {

@@ -21,17 +21,44 @@ document.addEventListener('DOMContentLoaded', function() {
                 const submitButton = form.querySelector('button[type="submit"]');
                 const originalButtonText = submitButton.innerHTML;
                 submitButton.disabled = true;
-                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                
+                // Create loading container if it doesn't exist
+                let loadingContainer = form.querySelector('.loading-container');
+                if (!loadingContainer) {
+                    loadingContainer = document.createElement('div');
+                    loadingContainer.className = 'loading-container';
+                    loadingContainer.innerHTML = `
+                        <div class="loading-bird"></div>
+                        <div class="loading-bird"></div>
+                        <div class="loading-bird"></div>
+                    `;
+                    form.style.position = 'relative';
+                    form.appendChild(loadingContainer);
+                }
+                
+                // Show loading state
+                form.classList.add('form-loading');
                 
                 // Simulate form submission (replace with actual fetch/AJAX call)
                 setTimeout(() => {
+                    // Hide loading state
+                    form.classList.remove('form-loading');
+                    
                     // Show success message
                     showFormMessage(form, 'success', 'Your message has been sent successfully!');
+                    
                     // Reset form
                     form.reset();
                     submitButton.innerHTML = originalButtonText;
                     submitButton.disabled = false;
-                }, 1500);
+                    
+                    // Remove loading container after animation completes
+                    setTimeout(() => {
+                        if (loadingContainer && loadingContainer.parentNode) {
+                            loadingContainer.remove();
+                        }
+                    }, 500);
+                }, 2000);
             } else {
                 // Show validation errors
                 form.classList.add('was-validated');
