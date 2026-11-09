@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coffee Leaf Disease Image Classification — Randell Mwania</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Cpath d=%27M12 2C13 8 16 11 22 12C16 13 13 16 12 22C11 16 8 13 2 12C8 11 11 8 12 2Z%27 fill=%27%23F6D97F%27 stroke=%27%231A1A1A%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Caveat:wght@500;600&amp;family=Geist:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBFAF7;font-family:'Geist',sans-serif;color:#1A1A1A;line-height:1.7}
+a{color:#1A1A1A}a:hover{color:#A9692F}
+.container{max-width:900px;margin:0 auto;padding:40px 24px 100px}
+.stickyhdr{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.85);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(26,26,26,.06)}
+.chip{display:inline-block;padding:6px 14px;border-radius:999px;background:#FFFFFF;border:1.5px solid #1A1A1A;font-size:13px;font-weight:500}
+.stk{filter:drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(0 7px 10px rgba(26,26,26,.10))}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 24px;border-radius:12px;background:#1A1A1A;color:#FBFAF7;text-decoration:none;font-weight:500;transition:transform .2s ease}
+.btn:hover{color:#FBFAF7;transform:translateY(-2px)}
+.site{transition:filter .5s ease}
+.dark{filter:invert(1) hue-rotate(180deg)}
+.dark img{filter:invert(1) hue-rotate(180deg)}
+</style>
+</head>
+<body>
+<div id="site" class="site">
+<div class="stickyhdr">
+  <div style="max-width:900px;margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center">
+    <a href="index.html" style="text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:8px">
+      <span>←</span> Back to Portfolio
+    </a>
+    <span style="font-family:'Playfair Display',serif;font-weight:600;font-size:20px">Randell<em style="color:#C9894F">.</em></span>
+  </div>
+</div>
+
+<main class="container">
+  <div style="font-family:'Geist',sans-serif;font-size:12px;font-weight:600;letter-spacing:.26em;color:#A9692F;margin-bottom:8px">COMPUTER VISION &amp; DEEP LEARNING</div>
+  <h1 style="margin:0 0 12px;font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(40px,5.4vw,64px);line-height:1.05;letter-spacing:-0.025em">Coffee Leaf <em style="font-weight:400">Disease Vision</em></h1>
+  <div style="font-family:'Caveat',cursive;font-size:28px;color:#6B675F;transform:rotate(-1deg);margin-bottom:28px">automated early infection detection with 90% accuracy ♡</div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px">
+    <span class="chip">TensorFlow</span>
+    <span class="chip" style="background:#FBF3DC">Convolutional Neural Network (CNN)</span>
+    <span class="chip">Python</span>
+    <span class="chip">Image Processing</span>
+    <span class="chip">Matplotlib</span>
+  </div>
+
+  <div style="background:#FFFFFF;border:1.5px solid #1A1A1A;border-radius:20px;overflow:hidden;box-shadow:0 24px 44px -28px rgba(26,26,26,.35);margin-bottom:48px">
+    <div style="display:flex;align-items:center;gap:8px;padding:12px 18px;border-bottom:1.5px solid #1A1A1A;background:#FBFAF7">
+      <span style="width:11px;height:11px;border-radius:50%;background:#F6C6A4;border:1px solid #1A1A1A"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#F6D97F;border:1px solid #1A1A1A"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#EFE8DA;border:1px solid #1A1A1A"></span>
+      <span style="margin-left:12px;padding:3px 12px;border-radius:999px;background:#FFF;border:1px solid #E8E4DC;font-size:12px;color:#6B675F">model_inference_pipeline.py</span>
+    </div>
+    <div style="padding:48px 24px;background:#F3EFE6;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:18px">
+      <div style="font-family:'Playfair Display',serif;font-size:64px;font-weight:600;color:#2F855A;line-height:1">90%</div>
+      <div style="font-size:16px;font-weight:500;color:#1A1A1A">Classification Accuracy Across Multi-Class Coffee Pathologies</div>
+      <div style="font-size:13px;color:#6B675F;max-width:500px">Trained on hundreds of annotated field specimens including Coffee Leaf Rust (Hemileia vastatrix), Brown Eye Spot, and healthy foliage.</div>
+    </div>
+  </div>
+
+  <section style="display:flex;flex-direction:column;gap:36px;font-size:17px;color:#4D4943">
+    <div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:28px;color:#1A1A1A;margin:0 0 12px">Problem &amp; Context</h2>
+      <p style="margin:0">Coffee represents one of East Africa's leading agricultural exports and economic backbones. However, fungal and bacterial foliar diseases cause severe crop losses before symptoms are visibly noticeable to the naked eye. Traditional scouting requires scarce agronomic expertise across vast plantation hectarage. This project bridges deep learning computer vision directly into smallholder crop management.</p>
+    </div>
+
+    <div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:28px;color:#1A1A1A;margin:0 0 12px">Architecture &amp; Pipeline</h2>
+      <p style="margin:0 0 12px">The machine learning solution integrates an end-to-end computer vision pipeline developed in Python and TensorFlow:</p>
+      <ul style="padding-left:22px;margin:0;display:flex;flex-direction:column;gap:8px">
+        <li><strong>Image Preprocessing &amp; Color Space Conversion:</strong> Images are normalized and augmented through random spatial flipping, rotational jitter, and contrast normalization to reflect unpredictable field lighting.</li>
+        <li><strong>Feature Extraction:</strong> Sequential 2D convolutional blocks extract hierarchical spatial representations, transitioning from low-level leaf venation edges to high-level necrotic lesion patterns.</li>
+        <li><strong>Batch Normalization &amp; Dropout:</strong> Integrated between convolutional blocks to stabilize gradient descent and mitigate overfitting on background soil/vegetation artifacts.</li>
+        <li><strong>Softmax Classification:</strong> Outputs probabilistic confidence scores across disease categories, flagging suspected infections when confidence exceeds threshold markers.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 style="font-family:'Playfair Display',serif;font-size:28px;color:#1A1A1A;margin:0 0 12px">Impact &amp; Results</h2>
+      <p style="margin:0">The resulting model achieved a robust <strong>90% accuracy</strong> score on unseen test evaluations. By empowering farm managers to localize infection hot-spots days earlier than traditional manual scouting, targeted fungicide and cultural treatments can be applied with precision, reducing chemical runoff and protecting crop yields.</p>
+    </div>
+  </section>
+
+  <div style="margin-top:60px;padding-top:30px;border-top:1px solid #E3DED4;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px">
+    <a href="index.html" class="btn">← Back to All Projects</a>
+    <a href="https://github.com/randellmwania" target="_blank" rel="noopener" class="btn" style="background:#F6D97F;color:#1A1A1A;font-weight:600">View on GitHub ↗</a>
+  </div>
+</main>
+</div>
+</body>
+</html>

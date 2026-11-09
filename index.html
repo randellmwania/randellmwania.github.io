@@ -1,0 +1,1164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Randell Mwania — Data Scientist | IT</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Cpath d=%27M12 2C13 8 16 11 22 12C16 13 13 16 12 22C11 16 8 13 2 12C8 11 11 8 12 2Z%27 fill=%27%23F6D97F%27 stroke=%27%231A1A1A%27/%3E%3C/svg%3E">
+<meta name="description" content="Randell Mwania is a Data Scientist and IT specialist based in Nairobi, Kenya. Experienced in machine learning, Python, computer vision, data analytics, and Power Platform automation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&amp;family=Caveat:wght@500;600&amp;family=Geist:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FBFAF7}
+a{color:#1A1A1A}a:hover{color:#5A4A2E}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-9px) rotate(calc(var(--r,0deg) + 2deg))}}
+@keyframes bob2{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-8px) rotate(calc(var(--r,0deg) - 2deg))}}
+@keyframes bob3{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-6px) rotate(calc(var(--r,0deg) + 3deg))}}
+@keyframes wiggle{0%,100%{transform:rotate(var(--r,0deg)) scale(1)}25%{transform:rotate(calc(var(--r,0deg) - 7deg)) scale(1.06)}60%{transform:rotate(calc(var(--r,0deg) + 6deg)) scale(1.06)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes march{to{stroke-dashoffset:-56}}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.08)}}
+@keyframes twinkle{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.25;transform:scale(.7)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes wave{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes scan{0%,100%{transform:translateX(0)}50%{transform:translateX(34px)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,133,90,.45)}70%{box-shadow:0 0 0 7px rgba(47,133,90,0)}100%{box-shadow:0 0 0 0 rgba(47,133,90,0)}}
+@keyframes fly{0%,100%{transform:translate(0,0) rotate(-8deg)}50%{transform:translate(10px,-12px) rotate(-2deg)}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes sway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+.up{opacity:0;animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.stk{filter:drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(0 7px 10px rgba(26,26,26,.10))}
+.bob{animation:bob 6s ease-in-out infinite;transform:rotate(var(--r,0deg))}
+.bob2{animation:bob2 7.2s ease-in-out infinite .9s;transform:rotate(var(--r,0deg))}
+.bob3{animation:bob3 5.4s ease-in-out infinite 1.7s;transform:rotate(var(--r,0deg))}
+.wig{transform:rotate(var(--r,0deg))}
+.wig:hover{animation:wiggle .55s ease}
+.underline{stroke-dasharray:320;stroke-dashoffset:320;animation:draw 1.1s cubic-bezier(.6,0,.2,1) 1.1s forwards}
+.arrowdraw{stroke-dasharray:200;stroke-dashoffset:200;animation:draw 1.2s ease 1.6s forwards}
+.march{animation:march 2.4s linear infinite}
+.blink{animation:blink 4.5s infinite;transform-box:fill-box;transform-origin:center}
+.tw{animation:twinkle 2.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.tw2{animation:twinkle 3.6s ease-in-out infinite 1s;transform-box:fill-box;transform-origin:center}
+.hand{animation:spin 6s linear infinite;transform-box:view-box}
+.spin{animation:spin 22s linear infinite}
+.w1{animation:wave 1.6s ease-in-out infinite}
+.w2{animation:wave 1.6s ease-in-out infinite .3s}
+.scan{animation:scan 3.2s ease-in-out infinite;transform-box:fill-box}
+.dot{animation:pulse 2s infinite}
+.fly{animation:fly 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.marq{animation:marq 34s linear infinite}
+.sway{animation:sway 3.5s ease-in-out infinite;transform-origin:50% 0}
+@keyframes roam{0%,100%{transform:translate(0,0)}25%{transform:translate(10px,-8px)}50%{transform:translate(-4px,-12px)}75%{transform:translate(-10px,4px)}}
+@keyframes look{0%,18%{transform:translateX(0)}25%,45%{transform:translateX(-8px)}52%,72%{transform:translateX(8px)}80%,100%{transform:translateX(0)}}
+@keyframes beat{0%,40%,100%{transform:scale(1)}10%{transform:scale(1.18)}20%{transform:scale(1)}30%{transform:scale(1.12)}}
+@keyframes eq{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}}
+@keyframes ribbon{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(8deg)}}
+@keyframes lensPath{0%,8%{transform:translate(0,0)}35%,42%{transform:translate(46px,0)}52%{transform:translate(46px,34px)}75%,84%{transform:translate(0,34px)}100%{transform:translate(0,0)}}
+@keyframes hlA{0%,8%{transform:scaleX(0)}35%,92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+@keyframes hlB{0%,52%{transform:scaleX(0)}75%,92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+@keyframes hop{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-8px) rotate(-8deg)}}
+@keyframes drainTop{0%{transform:scaleY(1)}78%,100%{transform:scaleY(0)}}
+@keyframes fillBot{0%{transform:scaleY(0)}78%,100%{transform:scaleY(1)}}
+@keyframes flip{0%,80%{transform:rotate(0)}100%{transform:rotate(180deg)}}
+@keyframes stream{0%{stroke-dashoffset:0;opacity:1}76%{opacity:1}78%,100%{stroke-dashoffset:-42;opacity:0}}
+@keyframes lineDraw{0%{stroke-dashoffset:220}45%,88%{stroke-dashoffset:0}100%{stroke-dashoffset:0;opacity:0}}
+@keyframes areaIn{0%,30%{opacity:0}55%,88%{opacity:1}100%{opacity:0}}
+@keyframes pop{0%,100%{transform:scale(0)}10%,88%{transform:scale(1)}}
+@keyframes glow{0%,100%{r:4}50%{r:7}}
+@keyframes barGrow{0%{transform:scaleY(0)}60%,100%{transform:scaleY(1)}}
+@keyframes scanSweep{0%,100%{transform:translateY(0)}50%{transform:translateY(80px)}}
+.roam{animation:roam 6s ease-in-out infinite}
+.look{animation:look 5s ease-in-out infinite}
+.beat{animation:beat 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.eq{animation:eq .9s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.ribbon{animation:ribbon 3s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 0}
+.lensPath{animation:lensPath 5s ease-in-out infinite}
+.hlA{animation:hlA 5s ease-in-out infinite;transform-box:fill-box;transform-origin:left}
+.hlB{animation:hlB 5s ease-in-out infinite;transform-box:fill-box;transform-origin:right}
+.hop{animation:hop 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.flip{animation:flip 6s cubic-bezier(.6,0,.3,1) infinite;transform-box:view-box;transform-origin:80px 80px}
+.drainTop{animation:drainTop 6s linear infinite;transform-box:fill-box;transform-origin:50% 100%}
+.fillBot{animation:fillBot 6s linear infinite;transform-box:fill-box;transform-origin:50% 100%}
+.stream{stroke-dasharray:3 4;animation:stream 6s linear infinite}
+.lineDraw{stroke-dasharray:220;animation:lineDraw 4.5s cubic-bezier(.4,0,.2,1) infinite}
+.areaIn{animation:areaIn 4.5s ease infinite}
+.pop{transform:scale(0);animation:pop 4.5s ease infinite;transform-box:fill-box;transform-origin:center}
+.glow{animation:glow 1.2s ease-in-out infinite}
+.scanSweep{animation:scanSweep 3s ease-in-out infinite}
+.barGrow{transform-origin:bottom;animation:barGrow 2.5s ease-in-out infinite alternate}
+.win{transform:rotate(var(--r,0deg));transition:transform .55s cubic-bezier(.2,.7,.2,1),box-shadow .55s ease}
+.proj:hover .win{transform:rotate(0deg) translateY(-8px);box-shadow:0 30px 50px -30px rgba(26,26,26,.45)}
+.proj:hover .cov{animation:wiggle .6s ease}
+.chip{display:inline-block;padding:6px 12px;border-radius:999px;background:#FFFFFF;border:1.5px solid #1A1A1A;font-size:13px;font-weight:500;transition:transform .25s ease}
+.chip:hover{transform:rotate(-4deg) scale(1.06)}
+.btn{transition:background .25s ease,color .25s ease}
+.btn:hover{background:#1A1A1A;color:#FBFAF7}
+.btn:hover .mini{animation:wiggle .5s ease}
+.cta{position:relative;text-decoration:none;font-weight:600;font-size:16px;padding-bottom:4px;background:linear-gradient(#F6D97F,#F6D97F) no-repeat 0 100%/100% 8px;transition:background-size .3s ease}
+.cta:hover{background-size:100% 100%}
+.award{transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.award:hover{transform:translateY(-4px) rotate(-.4deg)}
+.award:hover .rosette{animation:wiggle .6s ease}
+@keyframes type{from{width:0}to{width:22ch}}
+@keyframes sig{to{stroke-dashoffset:-120}}
+@keyframes nodeGlow{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+@keyframes antenna{0%,100%{fill:#F6C6A4}50%{fill:#FFFFFF}}
+@keyframes popIn{from{opacity:0;transform:translateY(8px) scale(.94)}to{opacity:1;transform:none}}
+@keyframes halo{0%,100%{transform:scale(.9);opacity:.35}50%{transform:scale(1.05);opacity:.6}}
+@keyframes starFound{0%{transform:scale(1) rotate(0)}40%{transform:scale(1.6) rotate(140deg)}100%{transform:scale(1.15) rotate(360deg)}}
+.typed{display:inline-block;overflow:hidden;white-space:nowrap;width:0;animation:type 1.8s steps(22) 1.2s forwards}
+.cursor2{display:inline-block;width:8px;height:15px;background:#F6D97F;animation:blink2 1s steps(1) infinite}
+@keyframes blink2{50%{opacity:0}}
+.sig{stroke-dasharray:14 106;animation:sig 2.1s linear infinite}
+.nodeGlow{animation:nodeGlow 1.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.antenna{animation:antenna 1.2s steps(1) infinite}
+.popIn{animation:popIn .45s cubic-bezier(.2,.7,.2,1) both}
+.halo{animation:halo 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.egg{transition:transform .2s ease}
+.egg:hover{transform:scale(1.06)}
+.egg:active{transform:scale(.94)}
+.hidden-star{opacity:.55;transition:opacity .2s ease,transform .2s ease}
+.hidden-star:hover{opacity:1;transform:scale(1.2) rotate(20deg)}
+.found-star{animation:starFound .8s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes steam{0%{opacity:0;transform:translateY(3px)}40%{opacity:1}100%{opacity:0;transform:translateY(-4px)}}
+.steam{animation:steam 2.4s ease-in-out infinite}
+.site{transition:filter .5s ease}
+.dark{filter:invert(1) hue-rotate(180deg)}
+.dark img{filter:invert(1) hue-rotate(180deg)}
+.dark .stk{filter:drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) invert(1) hue-rotate(180deg)}
+.icon-link{transition:transform .25s ease,background .25s ease}
+.icon-link:hover{background:#F6D97F;transform:translateY(-3px) rotate(-6deg)}
+.wins{background:#F4EFE5;color:#1A1A1A}
+.wins .wlabel{color:#A9692F}
+.wins .wnote{color:#6B675F}
+.wcard{background:#EFE6D6;border:1px solid rgba(26,26,26,.1);box-shadow:0 26px 44px -34px rgba(40,30,16,.55);transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.wcard:hover{transform:translateY(-4px)}
+.wp1{background:linear-gradient(160deg,#F2E7D3 0%,#E6D7BE 100%)}
+.wp2{background:linear-gradient(160deg,#F5E3D6 0%,#E8D0BF 100%)}
+.wp3{background:linear-gradient(160deg,#EEEADF 0%,#DEDACB 100%)}
+.wp4{background:linear-gradient(160deg,#F4EACC 0%,#E6D9B2 100%)}
+.wph{color:rgba(26,26,26,.34)}
+.wscrim{background:linear-gradient(180deg,rgba(34,26,16,0) 38%,rgba(34,26,16,.5) 68%,rgba(34,26,16,.88) 100%)}
+.wtag{background:rgba(255,255,255,.92);border:1px solid rgba(26,26,26,.1);color:#1A1A1A}
+.wyear{background:rgba(255,255,255,.92);color:#1A1A1A}
+.wkick{color:#F6D97F}
+.wtitle{color:#FFFFFF}
+.wsub{color:#F1ECE3}
+.dark .wins{filter:invert(1) hue-rotate(180deg);background:#12100D;color:#FBFAF7}
+.dark .wins img{filter:none}
+.dark .wins .wlabel{color:#F6D97F}
+.dark .wins .wnote{color:#9C968B}
+.dark .wcard{background:#1C1915;border-color:rgba(255,255,255,.08);box-shadow:none}
+.dark .wp1{background:linear-gradient(160deg,#3A3226 0%,#221D17 55%,#161310 100%)}
+.dark .wp2{background:linear-gradient(160deg,#40302A 0%,#241B18 60%,#161210 100%)}
+.dark .wp3{background:linear-gradient(160deg,#2F3029 0%,#1D1D18 60%,#141411 100%)}
+.dark .wp4{background:linear-gradient(160deg,#3B3421 0%,#221E14 60%,#15130E 100%)}
+.dark .wph{color:rgba(251,250,247,.28)}
+.dark .wscrim{background:linear-gradient(180deg,rgba(14,12,10,0) 38%,rgba(14,12,10,.55) 68%,rgba(14,12,10,.92) 100%)}
+.dark .wtag{background:rgba(246,217,127,.14);border-color:rgba(246,217,127,.4);color:#F6D97F}
+.dark .wyear{background:rgba(14,12,10,.6);color:#E9E4DA}
+.dark .wsub{color:#CFC8BB}
+.wcard .wphoto{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.wcard:hover .wphoto{transform:scale(1.04)}
+@media (max-width: 860px){.wgrid{grid-template-columns:1fr !important;grid-template-rows:none !important;grid-template-areas:'a' 'b' 'c' 'd' !important}.wgrid .wcard{min-height:300px}}
+@keyframes signDraw{to{stroke-dashoffset:0}}
+@keyframes signFill{to{fill:#1A1A1A}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes popDot{0%{transform:scale(0)}60%{transform:scale(1.3)}100%{transform:scale(1)}}
+.introOverlay{animation:fadeOut .45s ease 3.55s forwards}
+@keyframes fadeOut{to{opacity:0}}
+.sign{fill:transparent;stroke:#1A1A1A;stroke-width:2.4;stroke-dasharray:2600;stroke-dashoffset:2600;animation:signDraw 2.2s cubic-bezier(.6,.05,.3,1) .15s forwards,signFill .7s ease 2.1s forwards}
+.signDot{transform:scale(0);transform-box:fill-box;transform-origin:center;animation:popDot .5s cubic-bezier(.3,1.6,.5,1) 2.35s forwards}
+.signLine{stroke-dasharray:800;stroke-dashoffset:800;animation:signDraw .9s cubic-bezier(.6,0,.2,1) 2.6s forwards}
+.introSub{opacity:0;animation:fadeIn .6s ease 2.9s forwards}
+.introHint{opacity:0;animation:fadeIn .6s ease 3.4s forwards}
+.logo{transition:transform .25s ease}
+.logo:hover{transform:rotate(-3deg)}
+.tl-node{transition:transform .3s ease,background .3s ease}
+.tl-item:hover .tl-node{transform:scale(1.12);background:#F6D97F}
+@media (prefers-reduced-motion: reduce){.sign{animation:none;fill:#1A1A1A;stroke-dashoffset:0}.signDot{animation:none;transform:none}.signLine{animation:none;stroke-dashoffset:0}.introSub,.introHint{animation:none;opacity:1}.introOverlay{animation:none}}
+.more{color:#8A8378;text-decoration:none;font-weight:500;border-bottom:1px dotted #B9AE9A;transition:color .2s ease,border-color .2s ease;cursor:pointer}
+.more:hover{color:#1A1A1A;border-bottom-color:#1A1A1A}
+.stickyhdr{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.84);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(26,26,26,.06)}
+.stickyhdr header{padding-top:16px !important;padding-bottom:16px !important}
+html{scroll-padding-top:84px;scroll-behavior:smooth}
+.resbtn{display:inline-flex;align-items:center;min-height:40px;padding:0 20px;border-radius:12px;background:#1A1A1A;color:#FBFAF7;text-decoration:none;font-weight:500;transition:transform .25s ease}
+.resbtn:hover{color:#FBFAF7;transform:translateY(-2px) rotate(-2deg)}
+.fadeable{will-change:opacity,transform}
+#progress{position:fixed;top:0;left:0;right:0;height:4px;z-index:100;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,#F6D97F,#E9A878,#1A1A1A);pointer-events:none}
+@media (max-width:760px){.ft{grid-template-columns:1fr !important;justify-items:center}.ft .ftbrand{justify-self:center !important}.ft .ftnav{justify-content:center !important}}
+.ghbtn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1.5px solid #1A1A1A;color:#1A1A1A;background:#fff;transition:transform .25s ease,background .25s ease,color .25s ease}.ghbtn:hover{background:#1A1A1A;color:#FBFAF7;transform:rotate(-8deg) scale(1.06)}
+
+/* Project Modal Overlay */
+.modal-backdrop{position:fixed;inset:0;background:rgba(26,26,26,.65);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-content{background:#FBFAF7;border:2px solid #1A1A1A;border-radius:24px;max-width:720px;width:100%;max-height:85vh;overflow-y:auto;position:relative;padding:36px 32px;box-shadow:0 30px 60px -20px rgba(26,26,26,.5);animation:popIn .35s cubic-bezier(.2,.7,.2,1)}
+.modal-close{position:absolute;top:20px;right:20px;width:38px;height:38px;border-radius:50%;background:#EFE8DA;border:1.5px solid #1A1A1A;display:flex;align-items:center;justify-content:center;cursor:pointer;font-weight:700;font-size:18px;color:#1A1A1A;transition:transform .2s ease,background .2s ease}
+.modal-close:hover{background:#F6D97F;transform:rotate(90deg)}
+</style>
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+
+<!-- Signature Splash Intro Overlay -->
+<div id="introHost"><button type="button" class="introOverlay" id="introBtn" aria-label="Skip intro" style="position: fixed; inset: 0; z-index: 100; width: 100%; height: 100%; border: 0; padding: 24px; background: #FBFAF7; color: #1A1A1A; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px">
+<svg viewBox="0 0 1000 300" role="img" aria-label="Randell." style="width: min(86vw, 1000px); height: auto; overflow: visible">
+<text class="sign" x="490" y="215" text-anchor="middle" style="font-family: 'Playfair Display', serif; font-weight: 600; font-size: 210px; letter-spacing: -5px">Randell</text>
+<text class="signDot" x="895" y="215" text-anchor="middle" style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 210px" fill="#C9894F">.</text>
+<path class="signLine" d="M120 262 C320 246 560 244 880 256" fill="none" stroke="#E9A878" stroke-width="7" stroke-linecap="round"></path>
+</svg>
+<div class="introSub" style="font-family: 'Caveat', cursive; font-size: 28px; color: #6B675F">data scientist · IT operations · machine learning</div>
+<div class="introHint" style="font-family: 'Geist', sans-serif; font-size: 13px; letter-spacing: .15em; color: #9C968B; text-transform: uppercase">tap anywhere to enter</div>
+</button></div>
+
+<div id="site" class="site" style="font-family: 'Geist', sans-serif; color: #1A1A1A; background: #FBFAF7; width: 100%; overflow-x: clip">
+
+<!-- Sticky Navigation Header -->
+<div class="stickyhdr"><header style="max-width: 1160px; margin: 0 auto; padding: 26px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px">
+<button type="button" class="logo" id="logoBtn" aria-label="Randell, replay the intro signature" style="display: flex; align-items: baseline; gap: 2px; padding: 0; border: 0; background: none; color: #1A1A1A; cursor: pointer">
+<span style="font-family: 'Playfair Display', serif; font-weight: 600; font-size: 25px; letter-spacing: -0.01em">Randell</span><span style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 25px; color: #C9894F">.</span>
+</button>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px; color: #4D4943">
+<a href="#about" style="text-decoration: none">About</a>
+<a href="#work" style="text-decoration: none">Work</a>
+<a href="#experience" style="text-decoration: none">Experience</a>
+<a href="#education" style="text-decoration: none">Education</a>
+<a href="#wins" style="text-decoration: none">Wins &amp; References</a>
+<a href="#contact" style="text-decoration: none">Contact</a>
+<a href="resume.html" target="_blank" class="resbtn">Resume</a>
+</nav>
+</header></div>
+
+<!-- Hero Section -->
+<section id="top" style="max-width: 1160px; margin: 0 auto; padding: 40px 24px 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 40px">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 26px; position: relative; z-index: 2">
+<div class="up" style="animation-delay: .1s; display: inline-flex; align-self: flex-start; align-items: center; gap: 9px; padding: 6px 14px; border-radius: 999px; background: #EFE8DA; font-size: 13px; color: #4D4943">
+<span class="dot" style="width: 7px; height: 7px; border-radius: 50%; background: #2F855A"></span>Open to work · Data Scientist | IT
+</div>
+<h1 class="up" style="animation-delay: .25s; margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(48px, 5.6vw, 78px); line-height: 1.04; letter-spacing: -0.025em">Turning <em style="font-weight: 400">complex data</em> into
+<span style="position: relative; display: inline-block; font-style: italic; font-weight: 400">actionable impact.
+<svg viewBox="0 0 340 24" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; left: 0; bottom: -10px; width: 100%; height: 18px; overflow: visible"><path class="underline" d="M4 16 C80 6 180 4 336 12" fill="none" stroke="#E9A878" stroke-width="5" stroke-linecap="round"></path></svg>
+</span></h1>
+<p class="up" style="animation-delay: .45s; margin: 0; font-size: 17px; line-height: 1.7; color: #4D4943; max-width: 480px">I’m Randell, a Junior Data Scientist transitioning from an IT background in Nairobi, Kenya. I build predictive ML models, computer vision systems, and automate operational workflows with Microsoft Power Platform.</p>
+<div class="up" style="animation-delay: .55s; align-self: flex-start; background: #1A1A1A; color: #FBFAF7; border-radius: 12px; padding: 12px 18px; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 1.7; box-shadow: 5px 5px 0 #F6D97F">
+<div><span style="color: #F6D97F">&gt;&gt;&gt;</span> randell.predict(<span style="color: #F6C6A4">"data + infrastructure"</span>)</div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="color: #9C968B">↳</span><span class="typed" style="color: #F6D97F">"actionable impact." ✦ 0.99</span><span class="cursor2"></span></div>
+</div>
+<div class="up" style="animation-delay: .6s; display: flex; flex-wrap: wrap; align-items: center; gap: 22px">
+<a href="#work" class="cta">See my work →</a>
+<a href="https://linkedin.com/in/randell-mwania" target="_blank" rel="noopener" class="cta">Connect on LinkedIn ↗</a>
+</div>
+</div>
+
+<!-- Hero Illustration with Interactive Bulb & Bubble -->
+<div class="up" style="animation-delay: .3s; flex: 0 1 450px; max-width: 450px; margin-left: auto; margin-right: auto; min-width: 0; position: relative">
+<div aria-hidden="true" style="position: absolute; left: 6%; right: 6%; top: 8%; bottom: 6%; border-radius: 48% 52% 46% 54% / 55% 45% 55% 45%; background: #F8EBD3"></div>
+<div aria-hidden="true" style="position: absolute; left: 10%; right: 10%; bottom: -10px; height: 34px; border-radius: 50%; background: radial-gradient(ellipse at center, rgba(26,26,26,.16), rgba(26,26,26,0) 70%)"></div>
+
+<!-- Handwritten Annotation -->
+<div class="up" aria-hidden="true" style="animation-delay: 1.4s; position: absolute; right: -4%; bottom: -64px; display: flex; align-items: flex-start; gap: 2px; font-family: 'Caveat', cursive; font-size: 23px; color: #4D4943; white-space: nowrap">
+<svg width="56" height="44" viewBox="0 0 56 44"><path class="arrowdraw" d="M52 36 C36 38 18 30 8 8 M6 18 L8 8 L18 10" fill="none" stroke="#1A1A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span style="transform: rotate(-3deg); display: inline-block; margin-top: 22px">that’s me, probably training a model ♡</span>
+</div>
+
+<!-- Stylized SVG Data Scientist Hero Artwork -->
+<svg viewBox="0 0 420 400" width="100%" height="auto" class="stk" aria-label="Illustration of Randell working on machine learning models and IT systems" style="position: relative; display: block; overflow: visible">
+  <!-- Desk Base -->
+  <rect x="30" y="320" width="360" height="14" rx="7" fill="#1A1A1A"/>
+  <rect x="50" y="334" width="20" height="50" rx="3" fill="#D4CAB6" stroke="#1A1A1A" stroke-width="2"/>
+  <rect x="350" y="334" width="20" height="50" rx="3" fill="#D4CAB6" stroke="#1A1A1A" stroke-width="2"/>
+  
+  <!-- Desk Accessories: Steaming Coffee Mug -->
+  <rect x="62" y="278" width="28" height="42" rx="6" fill="#F6D97F" stroke="#1A1A1A" stroke-width="2.5"/>
+  <path d="M90 286 C98 286 98 304 90 304" fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+  <path class="steam" d="M70 270 Q66 260 74 252" fill="none" stroke="#6B675F" stroke-width="2" stroke-linecap="round"/>
+  <path class="steam" style="animation-delay:.6s" d="M78 268 Q84 258 78 248" fill="none" stroke="#6B675F" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Stack of Books & Research Notes -->
+  <rect x="320" y="304" width="56" height="16" rx="3" fill="#F6C6A4" stroke="#1A1A1A" stroke-width="2"/>
+  <rect x="324" y="288" width="50" height="16" rx="3" fill="#EFE8DA" stroke="#1A1A1A" stroke-width="2"/>
+  <rect x="328" y="274" width="44" height="14" rx="2" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2"/>
+  <text x="333" y="284" font-family="'JetBrains Mono',monospace" font-size="8" fill="#1A1A1A">f(x)=w·x</text>
+
+  <!-- Dual Monitor Setup / Analytics Chart Screen in background -->
+  <rect x="230" y="140" width="130" height="96" rx="8" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2.5"/>
+  <rect x="236" y="146" width="118" height="84" rx="4" fill="#FBFAF7"/>
+  <rect x="286" y="236" width="18" height="26" fill="#1A1A1A"/>
+  <rect x="274" y="260" width="42" height="6" rx="3" fill="#1A1A1A"/>
+  <!-- Mini Bar Chart on Monitor -->
+  <rect class="barGrow" x="246" y="196" width="14" height="24" rx="2" fill="#F6D97F" stroke="#1A1A1A" stroke-width="1.2"/>
+  <rect class="barGrow" style="animation-delay:.2s" x="266" y="180" width="14" height="40" rx="2" fill="#E9A878" stroke="#1A1A1A" stroke-width="1.2"/>
+  <rect class="barGrow" style="animation-delay:.4s" x="286" y="166" width="14" height="54" rx="2" fill="#2F855A" stroke="#1A1A1A" stroke-width="1.2"/>
+  <rect class="barGrow" style="animation-delay:.6s" x="306" y="156" width="14" height="64" rx="2" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="1.2"/>
+  <path class="stream" d="M246 190 Q276 160 326 150" fill="none" stroke="#C9894F" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Character / Randell working at laptop -->
+  <!-- Chair Back -->
+  <rect x="136" y="160" width="88" height="120" rx="14" fill="#E8DFCC" stroke="#1A1A1A" stroke-width="3"/>
+  <!-- Head & Hair -->
+  <circle cx="180" cy="120" r="34" fill="#8D5524" stroke="#1A1A1A" stroke-width="3"/>
+  <path d="M152 116 C152 90 170 82 196 84 C212 86 216 100 214 116 C206 112 198 106 182 108 C166 110 158 114 152 116 Z" fill="#1A1A1A"/>
+  <!-- Ear & Eyeglasses -->
+  <circle cx="152" cy="122" r="5" fill="#8D5524" stroke="#1A1A1A" stroke-width="1.5"/>
+  <rect x="160" y="112" width="16" height="12" rx="3" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+  <rect x="180" y="112" width="16" height="12" rx="3" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+  <path d="M176 117 H180 M154 116 L160 117" stroke="#1A1A1A" stroke-width="2"/>
+  <!-- Smile -->
+  <path d="M170 134 Q178 140 186 134" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Torso & Yellow/Gold Hoodie -->
+  <path d="M142 168 Q180 156 218 168 L226 270 Q180 274 134 270 Z" fill="#F6D97F" stroke="#1A1A1A" stroke-width="3"/>
+  <!-- Collar & lanyard badge (Bosch associate / Data Scientist) -->
+  <path d="M168 166 L180 200 L192 166" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+  <rect x="172" y="200" width="16" height="24" rx="2" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+  <line x1="175" y1="206" x2="185" y2="206" stroke="#2F855A" stroke-width="2"/>
+
+  <!-- Arms resting on desk / typing -->
+  <path d="M142 186 Q128 230 162 258" fill="none" stroke="#1A1A1A" stroke-width="16" stroke-linecap="round"/>
+  <path d="M142 186 Q128 230 162 258" fill="none" stroke="#F6D97F" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="166" cy="260" r="7" fill="#8D5524" stroke="#1A1A1A" stroke-width="2"/>
+
+  <!-- Laptop Base & Screen -->
+  <path d="M136 296 L226 296 L216 320 L126 320 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="2.5"/>
+  <path d="M144 232 L220 232 L216 296 L140 296 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3"/>
+  <!-- Laptop Screen Code Glow -->
+  <rect x="148" y="238" width="64" height="52" fill="#1A1A1A"/>
+  <path d="M152 246 H180 M152 254 H196 M152 262 H170 M152 270 H204" stroke="#F6D97F" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="198" cy="246" r="3" fill="#2F855A"/>
+
+  <!-- Laptop Back Cover with Cool Stickers: Python & ML -->
+  <rect x="130" y="296" width="94" height="4" rx="2" fill="#FFFFFF"/>
+</svg>
+
+<!-- Hint for light bulb -->
+<div aria-hidden="true" style="position: absolute; right: 74px; top: -40px; display: flex; align-items: flex-end; gap: 2px; font-family: 'Caveat', cursive; font-size: 21px; color: #4D4943; white-space: nowrap; transform: rotate(-4deg)"><span id="bulbHint">psst, tap the bulb</span><svg width="40" height="30" viewBox="0 0 40 30" style="transform: scaleY(-1); margin-bottom: -18px"><path class="arrowdraw" d="M2 24 C16 26 28 18 36 6 M28 6 L36 6 L36 14" fill="none" stroke="#1A1A1A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+
+<!-- Interactive Light Bulb (Dark Mode Toggle) -->
+<div class="bob" style="--r: 9deg; position: absolute; right: 0; top: -6%">
+<button type="button" class="egg" aria-label="Turn the lights off (dark mode)" id="bulbBtn" aria-pressed="false" style="background: none; border: 0; padding: 0; cursor: pointer">
+<svg class="stk" width="86" height="118" viewBox="330 -10 130 144" aria-hidden="true" style="overflow: visible">
+<g id="halo" opacity="0" style="transition: opacity .3s ease"><circle class="halo" cx="394" cy="62" r="56" fill="#F6D97F" opacity=".45"></circle><path class="tw" d="M336 30 L318 18 M394 2 V-14 M452 30 L470 18 M456 76 H476 M332 76 H312" stroke="#1A1A1A" stroke-width="3.5" stroke-linecap="round"></path></g>
+<path d="M352 66 C352 40 372 24 394 24 C416 24 436 40 436 66 C436 84 424 92 420 104 L368 104 C364 92 352 84 352 66 Z" id="bulbFill" fill="#F6D97F" stroke="#1A1A1A" stroke-width="3"></path><rect x="370" y="104" width="48" height="10" rx="3" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.6"></rect><rect x="374" y="114" width="40" height="10" rx="3" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.6"></rect><path d="M382 80 L388 68 L394 80 L400 68 L406 80" fill="none" stroke="#1A1A1A" stroke-width="2.4"></path></svg>
+</button>
+</div>
+
+<!-- Interactive Speech Bubble -->
+<div class="bob2" style="--r: -8deg; position: absolute; left: -4%; top: 26%">
+<button type="button" class="egg" id="bubbleBtn" aria-label="Speech bubble: data?" style="position: relative; display: block; background: none; border: 0; padding: 0; cursor: pointer">
+<svg class="stk" width="132" height="88" viewBox="34 70 132 84" aria-hidden="true"><path d="M40 104 C40 86 54 76 74 76 L128 76 C148 76 160 86 160 104 C160 122 148 132 128 132 L80 132 L62 148 L66 132 C50 130 40 120 40 104 Z" id="bubbleFill" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.6"></path></svg>
+<span style="position: absolute; left: 0; right: 0; top: 18px; text-align: center; font-family: 'Caveat', cursive; font-size: 26px; font-weight: 600; line-height: 1; color: #1A1A1A; pointer-events: none" id="bubbleText">data?</span>
+</button>
+</div>
+
+<!-- Decorative Sparkles -->
+<svg class="tw" width="34" height="34" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; right: 16%; bottom: 22%"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#1A1A1A"></path></svg>
+<svg class="tw2" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; left: 12%; top: 8%"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#E9A878"></path></svg>
+</div>
+</section>
+
+<!-- Continuous Skills Marquee -->
+<section aria-label="Skills" style="border-top: 1px solid #E8E4DC; border-bottom: 1px solid #E8E4DC; padding: 12px 0; overflow: hidden; background: #FFFFFF">
+<div class="marq" style="display: flex; align-items: center; gap: 22px; width: max-content; white-space: nowrap; font-family: 'Geist', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .14em; color: #6B675F">
+<span>PYTHON</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>MACHINE LEARNING</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>TENSORFLOW &amp; CNN</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>POWER AUTOMATE</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>POWER APPS</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>SCIKIT-LEARN</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>PANDAS &amp; NUMPY</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>SQL &amp; CMDB</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>SERVICENOW &amp; JIRA</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>DATA VISUALIZATION</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>PYSPARK</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>NETWORKING &amp; SECURITY</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>GIT &amp; GITHUB</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+
+<!-- Repeat for seamless marquee scroll loop -->
+<span>PYTHON</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>MACHINE LEARNING</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>TENSORFLOW &amp; CNN</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>POWER AUTOMATE</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>POWER APPS</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>SCIKIT-LEARN</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>PANDAS &amp; NUMPY</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+<span>SQL &amp; CMDB</span><svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#C9894F"></path></svg>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about" aria-labelledby="about-title" style="max-width: 1160px; margin: 0 auto; padding: 88px 24px 104px">
+<div style="border-top: 1px solid #E3DED4; padding-top: 30px; display: flex; flex-direction: column; gap: 52px">
+
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap">
+<div style="font-family: 'Geist', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .26em; color: #A9692F">ABOUT ME</div>
+<div style="font-family: 'Caveat', cursive; font-size: 22px; color: #6B675F; transform: rotate(-2deg)">(the honest version)</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px 44px">
+<figure style="margin: 0; flex: 0 0 auto; position: relative; width: 154px; transform: rotate(-4deg); background: #FFFFFF; padding: 8px 8px 12px; box-shadow: 0 14px 30px -18px rgba(26,26,26,.45); border-radius: 4px">
+<span aria-hidden="true" style="position: absolute; top: -10px; left: 50%; width: 64px; height: 20px; margin-left: -32px; background: rgba(246,217,127,.8); transform: rotate(-4deg)"></span>
+<!-- Stylized Polaroid portrait avatar -->
+<div style="width: 100%; height: 170px; background: #EFE8DA; border-radius: 2px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden">
+  <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #F8EBD3 0%, #E2D3B8 100%)"></div>
+  <svg viewBox="0 0 100 120" width="90" height="110" style="position: relative; z-index: 1">
+    <circle cx="50" cy="44" r="26" fill="#8D5524" stroke="#1A1A1A" stroke-width="2.5"/>
+    <path d="M28 42 C28 22 42 16 62 18 C74 20 78 30 76 42 C70 38 64 34 50 36 C38 38 32 40 28 42 Z" fill="#1A1A1A"/>
+    <rect x="36" y="38" width="12" height="9" rx="2" fill="none" stroke="#1A1A1A" stroke-width="1.8"/>
+    <rect x="52" y="38" width="12" height="9" rx="2" fill="none" stroke="#1A1A1A" stroke-width="1.8"/>
+    <path d="M48 42 H52" stroke="#1A1A1A" stroke-width="1.8"/>
+    <path d="M42 54 Q50 60 58 54" fill="none" stroke="#1A1A1A" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M20 96 C20 74 34 70 50 70 C66 70 80 74 80 96 Z" fill="#F6D97F" stroke="#1A1A1A" stroke-width="2.5"/>
+  </svg>
+</div>
+<figcaption style="margin-top: 6px; font-family: 'Caveat', cursive; font-size: 17px; line-height: 1; color: #4D4943; text-align: center">hi, it’s me ♡</figcaption>
+</figure>
+<h2 id="about-title" style="flex: 1 1 420px; min-width: 0; margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(52px, 6.8vw, 96px); line-height: .95; letter-spacing: -0.035em">Hi, I’m <em style="font-weight: 400; color: #A9692F">Randell.</em></h2>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 44px 80px; align-items: flex-start">
+<div style="flex: 1.3 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+<p style="margin: 0; font-size: clamp(23px, 2.2vw, 30px); line-height: 1.45; letter-spacing: -0.01em">I’m a <span style="color: #A9692F">Junior Data Scientist</span> transitioning from an enterprise IT background, and I love taking raw data and complex operational questions and turning them into real-world solutions that work reliably.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.75; color: #6B675F; max-width: 60ch">At Robert Bosch East Africa, I lead internal digital transformation by deploying Microsoft Power Platform solutions (Power Apps &amp; Power Automate) across Kenya and South Africa while supporting multi-division IT operations. On the data science side, I train computer vision models (CNNs achieving 90% accuracy), engineer collaborative filtering recommendation systems, and extract investment insights using Python, SQL, and predictive analytics.</p>
+<div role="img" aria-label="My motto: analyze, model, automate, deliver" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 20px; font-family: 'Caveat', cursive; font-size: 30px; line-height: 1.2; color: #1A1A1A">
+<span style="position: relative; display: inline-block; padding: 0 6px">analyze<svg viewBox="0 0 120 60" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; left: -8px; top: -9px; width: calc(100% + 16px); height: 48px; overflow: visible"><path class="arrowdraw" style="animation-delay: .4s" d="M60 6 C20 4 4 22 8 36 C14 56 104 58 114 34 C122 14 88 2 50 8" fill="none" stroke="#A9692F" stroke-width="2.2" stroke-linecap="round"></path></svg></span>
+<span style="position: relative; display: inline-block">model<svg viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; left: 0; bottom: -4px; width: 100%; height: 8px; overflow: visible"><path class="arrowdraw" style="animation-delay: .9s" d="M2 6 C12 0 18 12 28 6 C38 0 44 12 54 6 C64 0 70 12 80 6 C88 2 94 8 98 6" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"></path></svg></span>
+<span style="display: inline-block; padding: 0 6px; background: linear-gradient(#F6D97F,#F6D97F) no-repeat 0 72%/100% 46%; transform: rotate(-2deg)">automate</span>
+<span style="display: inline-flex; align-items: baseline; gap: 6px">deliver<svg class="beat" width="24" height="22" viewBox="0 0 24 22" aria-hidden="true"><path d="M12 20 C5 14 2 10 5 6 C7.5 3 11 4 12 7 C13 4 16.5 3 19 6 C22 10 19 14 12 20 Z" fill="#F6C6A4" stroke="#1A1A1A" stroke-width="1.4"></path></svg></span>
+</div>
+<div style="display: flex; align-items: center; gap: 8px; font-family: 'Caveat', cursive; font-size: 26px; transform: rotate(-3deg); align-self: flex-start">cheers, Randell <svg width="40" height="22" viewBox="0 0 46 24" aria-hidden="true"><path d="M2 16 C10 4 18 22 26 10 C30 4 36 6 44 12" fill="none" stroke="#1A1A1A" stroke-width="1.8" stroke-linecap="round"></path></svg><button type="button" id="starA" class="hidden-star" data-star aria-label="A hidden star" style="display: inline-flex; width: 30px; height: 30px; padding: 0; border: 0; background: none; cursor: pointer; vertical-align: middle"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="margin: auto"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#E8DFCC" stroke="#CDBFA6" stroke-width="1"></path></svg></button></div>
+</div>
+
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; padding-top: 6px">
+<div style="font-family: 'Geist', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .26em; color: #A9692F; margin-bottom: 8px">WHAT I’M GOOD AT</div>
+<div style="border-top: 1px solid #E3DED4; padding: 18px 0; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; align-items: center; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A9692F">01</span><span style="font-family: 'Playfair Display', serif; font-size: 23px; font-weight: 500">Machine Learning &amp; AI</span></div>
+<div style="font-size: 15px; line-height: 1.6; color: #6B675F">TensorFlow, Scikit-Learn, CNNs, image classification &amp; recommendation engines.</div>
+</div>
+<div style="border-top: 1px solid #E3DED4; padding: 18px 0; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; align-items: center; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A9692F">02</span><span style="font-family: 'Playfair Display', serif; font-size: 23px; font-weight: 500">Data Analytics &amp; Modeling</span></div>
+<div style="font-size: 15px; line-height: 1.6; color: #6B675F">Pandas, Matplotlib, SQL, data wrangling, hypothesis testing &amp; PySpark.</div>
+</div>
+<div style="border-top: 1px solid #E3DED4; padding: 18px 0; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; align-items: center; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A9692F">03</span><span style="font-family: 'Playfair Display', serif; font-size: 23px; font-weight: 500">Automation &amp; Power Platform</span></div>
+<div style="font-size: 15px; line-height: 1.6; color: #6B675F">Power Automate, Power Apps low-code apps, and scripts saving 10+ hrs/week.</div>
+</div>
+<div style="border-top: 1px solid #E3DED4; padding: 18px 0; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; align-items: center; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A9692F">04</span><span style="font-family: 'Playfair Display', serif; font-size: 23px; font-weight: 500">IT Systems &amp; Infrastructure</span></div>
+<div style="font-size: 15px; line-height: 1.6; color: #6B675F">ServiceNow/Jira, CMDB, Tier 1-3 support, network security &amp; asset lifecycle.</div>
+</div>
+</div>
+</div>
+
+<!-- Metrics Bar -->
+<div style="border-top: 1px solid #E3DED4; padding-top: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px 40px">
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Playfair Display', serif; font-size: 48px; line-height: 1; letter-spacing: -0.02em">90%</span><span style="font-size: 14px; color: #6B675F">CNN disease detection accuracy</span></div>
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Playfair Display', serif; font-size: 48px; line-height: 1; letter-spacing: -0.02em">+30%</span><span style="font-size: 14px; color: #6B675F">recommendation precision gain</span></div>
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Playfair Display', serif; font-size: 48px; line-height: 1; letter-spacing: -0.02em">10+</span><span style="font-size: 14px; color: #6B675F">hrs/wk saved via IT automation</span></div>
+<div style="display: flex; align-items: baseline; gap: 12px"><span style="font-family: 'Playfair Display', serif; font-size: 48px; line-height: 1; letter-spacing: -0.02em">Tier 1-3</span><span style="font-size: 14px; color: #6B675F">enterprise incident resolution</span></div>
+</div>
+
+</div>
+</section>
+
+<!-- Selected Work Section -->
+<section id="work" aria-labelledby="work-title" style="max-width: 1160px; margin: 0 auto; padding: 20px 24px 64px">
+<div style="position: relative; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 72px">
+<div>
+<div style="font-family: 'Caveat', cursive; font-size: 24px; color: #6B675F; margin-bottom: 6px">things I’ve built with code, data &amp; curiosity</div>
+<h2 id="work-title" style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(44px, 6vw, 84px); line-height: 1; letter-spacing: -0.025em">Selected <em style="font-weight: 400">projects</em></h2>
+</div>
+<a href="https://github.com/randellmwania" target="_blank" rel="noopener" class="cta">More on GitHub ↗</a>
+<button type="button" id="starB" class="hidden-star" data-star aria-label="A hidden star" style="position: absolute; right: -6px; top: -34px; width: 30px; height: 30px; padding: 0; border: 0; background: none; cursor: pointer; z-index: 3"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#E8DFCC" stroke="#CDBFA6" stroke-width="1"></path></svg></button>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 120px">
+
+<!-- PROJECT 1: Coffee Leaf Image Classification -->
+<div class="proj" style="display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 0 1 460px; max-width: 460px; min-width: 0; position: relative; padding: 24px 10px 10px">
+<div aria-hidden="true" style="position: absolute; left: -10px; top: -30px; font-family: 'Bodoni Moda', serif; font-size: 130px; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px #D8CDB8">01</div>
+<div class="win" style="--r: -1.5deg; position: relative; background: #FFFFFF; border: 1.5px solid #1A1A1A; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px -32px rgba(26,26,26,.4)">
+<span aria-hidden="true" style="position: absolute; z-index: 2; top: -6px; right: 60px; width: 96px; height: 26px; background: rgba(246,217,127,.85); transform: rotate(5deg)"></span>
+<div style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border-bottom: 1.5px solid #1A1A1A; background: #FBFAF7">
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #F6C6A4; border: 1px solid #1A1A1A"></span><span style="width: 11px; height: 11px; border-radius: 50%; background: #F6D97F; border: 1px solid #1A1A1A"></span><span style="width: 11px; height: 11px; border-radius: 50%; background: #EFE8DA; border: 1px solid #1A1A1A"></span>
+<span style="margin-left: 12px; flex: 1; padding: 4px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E8E4DC; font-size: 12px; color: #6B675F">coffee-vision.ai, demo</span>
+</div>
+<div style="height: 236px; background: #F3EFE6; display: flex; align-items: center; justify-content: center; gap: 24px; position: relative">
+<!-- Coffee Leaf & CNN Scanner Visual -->
+<svg class="cov stk" style="--r: -3deg; overflow: visible" width="160" height="150" viewBox="0 0 180 160" aria-hidden="true">
+  <!-- Coffee Leaf Shape -->
+  <path d="M90 20 C140 30 160 80 150 120 C120 150 70 140 40 110 C20 70 50 30 90 20 Z" fill="#2F855A" stroke="#1A1A1A" stroke-width="3"/>
+  <path d="M90 20 Q95 75 95 135" fill="none" stroke="#F6D97F" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M92 50 Q120 40 142 55 M94 80 Q125 75 145 92 M94 110 Q120 110 135 125" fill="none" stroke="#F6D97F" stroke-width="2" stroke-linecap="round"/>
+  <path d="M92 50 Q60 40 44 60 M94 80 Q62 80 48 95 M94 110 Q70 115 55 125" fill="none" stroke="#F6D97F" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Disease Lesion Detection Boxes -->
+  <circle cx="120" cy="75" r="14" fill="#C9894F" opacity=".85" stroke="#1A1A1A" stroke-width="1.8"/>
+  <rect class="lensPath" x="100" y="55" width="40" height="40" rx="4" fill="none" stroke="#E9A878" stroke-width="2.4" stroke-dasharray="4 3"/>
+
+  <!-- Scanning Reticle -->
+  <g class="roam">
+    <circle cx="95" cy="80" r="30" fill="none" stroke="#1A1A1A" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="60" y1="80" x2="130" y2="80" stroke="#F6D97F" stroke-width="2.5"/>
+  </g>
+
+  <!-- 90% Accuracy Badge Tag -->
+  <g class="hop">
+    <rect x="18" y="112" width="68" height="28" rx="8" fill="#F6D97F" stroke="#1A1A1A" stroke-width="2.4"/>
+    <text x="52" y="131" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-weight="700" font-size="14" fill="#1A1A1A">90%</text>
+  </g>
+  <path class="tw" d="M160 30 C161 37 163 39 170 40 C163 41 161 43 160 50 C159 43 157 41 150 40 C157 39 159 37 160 30 Z" fill="#1A1A1A"></path>
+</svg>
+<div style="display: flex; flex-direction: column; gap: 8px; width: 154px">
+<div style="align-self: flex-end; background: #1A1A1A; color: #FBFAF7; border-radius: 12px 12px 2px 12px; padding: 9px 12px; font-size: 12px">CNN diagnostic scan:</div>
+<div style="background: #FFFFFF; border: 1.5px solid #1A1A1A; border-radius: 12px 12px 12px 2px; padding: 9px 12px; font-size: 12px; line-height: 1.4">Rust infection spotted early · 90% confidence score ↗</div>
+</div>
+</div>
+</div>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: center; gap: 12px; font-size: 13px; color: #4D4943"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4 20 12 6 20Z" fill="#1A1A1A"></path></svg>Deep Learning · Computer Vision</div>
+<h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(38px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.02em">Coffee Leaf <em style="font-weight: 400">Disease Vision</em></h3>
+<div style="font-family: 'Caveat', cursive; font-size: 26px; color: #4D4943; transform: rotate(-1.5deg)">deep learning to safeguard agricultural yields</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4D4943">Developed a Convolutional Neural Network (CNN) in TensorFlow using advanced image processing to identify and classify coffee leaf infections, attaining 90% diagnostic accuracy to empower farmers with timely interventions. <a class="more" onclick="openModal('coffee')">more</a></p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span class="chip">TensorFlow</span><span class="chip" style="background: #FBF3DC">CNN</span><span class="chip">Python</span><span class="chip">Computer Vision</span><span class="chip">Image Processing</span></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 6px">
+<a href="coffee-leaf-classification.html" class="cta" style="">Read case study ↗</a>
+<a href="https://github.com/randellmwania" target="_blank" rel="noopener" class="ghbtn" aria-label="Coffee Leaf project on GitHub" title="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+</div>
+</div>
+</div>
+
+<!-- PROJECT 2: Microsoft Movie Studio Market Analysis -->
+<div class="proj" style="display: flex; flex-wrap: wrap-reverse; flex-direction: row-reverse; align-items: center; gap: 56px">
+<div style="flex: 0 1 460px; max-width: 460px; min-width: 0; position: relative; padding: 24px 10px 10px">
+<div aria-hidden="true" style="position: absolute; right: -10px; top: -30px; font-family: 'Bodoni Moda', serif; font-size: 130px; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px #D8CDB8">02</div>
+<div class="win" style="--r: 2.5deg; position: relative; background: #FFFFFF; border: 1.5px solid #1A1A1A; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px -32px rgba(26,26,26,.4)">
+<span aria-hidden="true" style="position: absolute; z-index: 2; top: -6px; left: 40px; width: 96px; height: 26px; background: rgba(246,217,127,.85); transform: rotate(-7deg)"></span>
+<div style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border-bottom: 1.5px solid #1A1A1A; background: #FBFAF7">
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #F6C6A4; border: 1px solid #1A1A1A"></span><span style="width: 11px; height: 11px; border-radius: 50%; background: #F6D97F; border: 1px solid #1A1A1A"></span><span style="width: 11px; height: 11px; border-radius: 50%; background: #EFE8DA; border: 1px solid #1A1A1A"></span>
+<span style="margin-left: 12px; flex: 1; padding: 4px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E8E4DC; font-size: 12px; color: #6B675F">boxoffice-predict.py</span>
+</div>
+<div style="height: 236px; background: #FCEBDD; display: flex; align-items: center; justify-content: center; gap: 28px; position: relative">
+<!-- Box Office Market Trends Chart Visual -->
+<div style="width: 290px; background: #FFFFFF; border: 1.5px solid #1A1A1A; border-radius: 12px; padding: 12px 14px 10px; transform: rotate(-1.5deg)">
+<div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px">
+<span style="font-size: 11px; color: #6B675F">budget vs revenue correlation</span>
+<span style="font-family: 'Caveat', cursive; font-size: 17px; color: #A9692F">predicted ROI +3.4x</span>
+</div>
+<svg viewBox="0 0 260 100" width="100%" aria-hidden="true" style="display: block; overflow: visible">
+<path d="M10 88 H250" stroke="#E8E4DC" stroke-width="1.5"></path>
+<path d="M10 60 H250 M10 30 H250" stroke="#F1EDE5" stroke-width="1" stroke-dasharray="3 4"></path>
+<!-- Data Trend Regression Curve -->
+<path class="lineDraw" d="M14 82 L50 72 L90 56 L130 48 L170 32 L210 24 L246 12" fill="none" stroke="#1A1A1A" stroke-width="2.6" stroke-linecap="round"/>
+<path class="areaIn" d="M14 82 L50 72 L90 56 L130 48 L170 32 L210 24 L246 12 L246 88 L14 88 Z" fill="#F6D97F" opacity=".4"/>
+<!-- Scatter points -->
+<circle class="pop" cx="50" cy="72" r="4.5" fill="#E9A878" stroke="#1A1A1A" stroke-width="1.5"/>
+<circle class="pop" style="animation-delay:.3s" cx="90" cy="56" r="4.5" fill="#F6D97F" stroke="#1A1A1A" stroke-width="1.5"/>
+<circle class="pop" style="animation-delay:.6s" cx="130" cy="48" r="4.5" fill="#2F855A" stroke="#1A1A1A" stroke-width="1.5"/>
+<circle class="glow" cx="210" cy="24" r="5" fill="#1A1A1A" stroke="#C9894F" stroke-width="2"/>
+<g style="font-family: 'Geist', sans-serif; font-size: 8px" fill="#6B675F" text-anchor="middle">
+<text x="14" y="98">Budget</text><text x="130" y="98">Genre Weights</text><text x="240" y="98">Revenue</text>
+</g>
+</svg>
+</div>
+</div>
+</div>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: center; gap: 12px; font-size: 13px; color: #4D4943"><span class="dot" style="width: 8px; height: 8px; border-radius: 50%; background: #2F855A"></span>Data Science · Market Intelligence</div>
+<h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(38px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.02em">Microsoft Movie Studio <em style="font-weight: 400">Analysis</em></h3>
+<div style="font-family: 'Caveat', cursive; font-size: 26px; color: #4D4943; transform: rotate(-1.5deg)">strategic investments backed by predictive modeling</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4D4943">Analysed industry box-office trends using Python, Pandas, and Matplotlib. Engineered a regression model estimating film commercial success based on production budgets, release timing, and genre combinations to guide a new studio’s capital allocation. <a class="more" onclick="openModal('movie')">more</a></p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span class="chip">Python</span><span class="chip" style="background: #FCEBDD">Pandas</span><span class="chip">Matplotlib</span><span class="chip">Predictive Modeling</span><span class="chip">Data Analytics</span></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 6px">
+<a href="movie-studio-market-analysis.html" class="cta" style="">Read case study ↗</a>
+<a href="https://github.com/randellmwania" target="_blank" rel="noopener" class="ghbtn" aria-label="Movie Analysis on GitHub" title="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+</div>
+</div>
+</div>
+
+<!-- PROJECT 3: Movie Recommendation System -->
+<div class="proj" style="display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 0 1 460px; max-width: 460px; min-width: 0; position: relative; padding: 24px 10px 10px">
+<div aria-hidden="true" style="position: absolute; left: -10px; top: -30px; font-family: 'Bodoni Moda', serif; font-size: 130px; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px #D8CDB8">03</div>
+<div class="win" style="--r: -2.5deg; position: relative; background: #FFFFFF; border: 1.5px solid #1A1A1A; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px -32px rgba(26,26,26,.4)">
+<span aria-hidden="true" style="position: absolute; z-index: 2; top: -6px; right: 40px; width: 96px; height: 26px; background: rgba(246,198,164,.85); transform: rotate(8deg)"></span>
+<div style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border-bottom: 1.5px solid #1A1A1A; background: #FBFAF7">
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #F6C6A4; border: 1px solid #1A1A1A"></span><span style="width: 11px; height: 11px; border-radius: 50%; background: #F6D97F; border: 1px solid #1A1A1A"></span><span style="width: 11px; height: 11px; border-radius: 50%; background: #EFE8DA; border: 1px solid #1A1A1A"></span>
+<span style="margin-left: 12px; flex: 1; padding: 4px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E8E4DC; font-size: 12px; color: #6B675F">recommend.ai/engine</span>
+</div>
+<div style="height: 236px; background: #FBF3DC; display: flex; align-items: center; justify-content: center; position: relative">
+<!-- Collaborative Filtering & Recommendation Network -->
+<svg class="cov stk" style="--r: 3deg; overflow: visible" width="170" height="150" viewBox="0 0 170 150" aria-hidden="true">
+  <!-- Central User Node -->
+  <circle cx="85" cy="75" r="22" fill="#F6D97F" stroke="#1A1A1A" stroke-width="3"/>
+  <circle cx="85" cy="70" r="8" fill="#1A1A1A"/>
+  <path d="M73 88 C73 80 80 78 85 78 C90 78 97 80 97 88 Z" fill="#1A1A1A"/>
+
+  <!-- Neighbor Recommendations -->
+  <!-- Movie Node 1 -->
+  <circle cx="30" cy="36" r="18" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5"/>
+  <text x="30" y="40" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10" font-weight="600">SciFi</text>
+  <path class="sig" d="M46 46 L70 63" stroke="#C9894F" stroke-width="2.5" stroke-dasharray="4 4"/>
+
+  <!-- Movie Node 2 -->
+  <circle cx="140" cy="38" r="18" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5"/>
+  <text x="140" y="42" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10" font-weight="600">Drama</text>
+  <path class="sig" d="M125 48 L100 65" stroke="#C9894F" stroke-width="2.5" stroke-dasharray="4 4"/>
+
+  <!-- Movie Node 3 (Top Match) -->
+  <circle class="hop" cx="85" cy="128" r="18" fill="#F6C6A4" stroke="#1A1A1A" stroke-width="2.5"/>
+  <text x="85" y="132" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9" font-weight="700">★ 0.94</text>
+  <path class="stream" d="M85 97 V110" stroke="#1A1A1A" stroke-width="2.5"/>
+</svg>
+<div style="position: absolute; right: 20px; bottom: 18px; padding: 6px 12px; border-radius: 8px; background: #FFFFFF; border: 1.5px solid #1A1A1A; font-size: 12px; font-weight: 600; transform: rotate(-2deg)">+30% precision boost ✓</div>
+</div>
+</div>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: center; gap: 12px; font-size: 13px; color: #4D4943"><span class="dot" style="width: 8px; height: 8px; border-radius: 50%; background: #2F855A"></span>Machine Learning · Recommender Systems</div>
+<h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(38px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.02em">Movie Recommendation <em style="font-weight: 400">Engine</em></h3>
+<div style="font-family: 'Caveat', cursive; font-size: 26px; color: #4D4943; transform: rotate(-1.5deg)">personalized suggestions driving 30% accuracy boost</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4D4943">Designed a dual hybrid recommendation engine utilizing collaborative filtering and content-based algorithms in Scikit-Learn and Pandas. Delivered personalized movie suggestions that improved recommendation accuracy by 30% and drove user engagement. <a class="more" onclick="openModal('recommender')">more</a></p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span class="chip">Scikit-Learn</span><span class="chip" style="background: #FBF3DC">Collaborative Filtering</span><span class="chip">Content-Based</span><span class="chip">Pandas</span></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 6px">
+<a href="movie-recommendation-system.html" class="cta" style="">Read case study ↗</a>
+<a href="https://github.com/randellmwania" target="_blank" rel="noopener" class="ghbtn" aria-label="Recommender System on GitHub" title="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+</div>
+</div>
+</div>
+
+<!-- PROJECT 4: Power Platform Enterprise Automation (Robert Bosch) -->
+<div class="proj" style="display: flex; flex-wrap: wrap-reverse; flex-direction: row-reverse; align-items: center; gap: 56px">
+<div style="flex: 0 1 460px; max-width: 460px; min-width: 0; position: relative; padding: 24px 10px 10px">
+<div aria-hidden="true" style="position: absolute; right: -10px; top: -30px; font-family: 'Bodoni Moda', serif; font-size: 130px; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px #D8CDB8">04</div>
+<div class="win" style="--r: 2deg; position: relative; background: #FFFFFF; border: 1.5px solid #1A1A1A; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px -32px rgba(26,26,26,.4)">
+<span aria-hidden="true" style="position: absolute; z-index: 2; top: -6px; left: 50px; width: 96px; height: 26px; background: rgba(246,198,164,.85); transform: rotate(-6deg)"></span>
+<div style="display: flex; align-items: center; gap: 8px; padding: 12px 16px; border-bottom: 1.5px solid #1A1A1A; background: #FBFAF7">
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #F6C6A4; border: 1px solid #1A1A1A"></span><span style="width: 11px; height: 11px; border-radius: 50%; background: #F6D97F; border: 1px solid #1A1A1A"></span><span style="width: 11px; height: 11px; border-radius: 50%; background: #EFE8DA; border: 1px solid #1A1A1A"></span>
+<span style="margin-left: 12px; flex: 1; padding: 4px 12px; border-radius: 999px; background: #FFFFFF; border: 1px solid #E8E4DC; font-size: 12px; color: #6B675F">powerapps.bosch/fcm-portal</span>
+</div>
+<div style="height: 236px; background: #EFE8DA; display: flex; align-items: center; justify-content: center; position: relative">
+<!-- Automated Flow Diagram SVG -->
+<svg class="cov stk" style="--r: -3deg; overflow: visible" width="180" height="150" viewBox="0 0 180 150" aria-hidden="true">
+  <!-- Low Code Flow Nodes -->
+  <rect x="15" y="55" width="46" height="40" rx="8" fill="#F6D97F" stroke="#1A1A1A" stroke-width="2.5"/>
+  <text x="38" y="79" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9" font-weight="700">Apps</text>
+  
+  <path class="stream" d="M62 75 H90" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round"/>
+  
+  <circle cx="106" cy="75" r="16" fill="#F6C6A4" stroke="#1A1A1A" stroke-width="2.5"/>
+  <path d="M102 70 L110 75 L102 80" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round"/>
+
+  <path class="stream" d="M123 75 H150" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="151" y="55" width="46" height="40" rx="8" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5"/>
+  <text x="174" y="79" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="8" font-weight="700">CMDB</text>
+</svg>
+<span style="position: absolute; left: 24px; bottom: 18px; padding: 6px 12px; border-radius: 8px; background: #FFFFFF; border: 1.5px solid #1A1A1A; font-size: 12px; font-weight: 500; transform: rotate(-3deg)">✓ automated inventory flow</span>
+<span style="position: absolute; right: 24px; top: 22px; padding: 6px 12px; border-radius: 8px; background: #FFFFFF; border: 1.5px solid #1A1A1A; font-size: 12px; font-weight: 500; transform: rotate(4deg)">10+ hrs/wk saved</span>
+</div>
+</div>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; align-items: center; gap: 12px; font-size: 13px; color: #4D4943"><span class="dot" style="width: 8px; height: 8px; border-radius: 50%; background: #2F855A"></span>Digital Transformation · Enterprise IT</div>
+<h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(38px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.02em">Power Platform <em style="font-weight: 400">Automation</em></h3>
+<div style="font-family: 'Caveat', cursive; font-size: 26px; color: #4D4943; transform: rotate(-1.5deg)">streamlining multinational operations at Robert Bosch</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4D4943">Architected and deployed Microsoft Power Platform workflows (Power Apps and Power Automate) for Robert Bosch East Africa and BSH South Africa, automating asset requisition, stock management, and CMDB reconciliations. <a class="more" onclick="openModal('bosch')">more</a></p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span class="chip">Power Automate</span><span class="chip" style="background: #FBF3DC">Power Apps</span><span class="chip">ServiceNow</span><span class="chip">CMDB</span><span class="chip">SQL</span></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 6px">
+<a href="bosch-process-automation.html" class="cta" style="">Read case study ↗</a>
+<a href="https://github.com/randellmwania" target="_blank" rel="noopener" class="ghbtn" aria-label="Bosch Automation on GitHub" title="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" aria-labelledby="exp-title" style="max-width: 1160px; margin: 0 auto; padding: 24px 24px 104px">
+<div style="border-top: 1px solid #E3DED4; padding-top: 30px; display: flex; flex-wrap: wrap; gap: 40px 80px">
+<div style="flex: 0 1 340px; display: flex; flex-direction: column; gap: 18px">
+<div style="font-family: 'Geist', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .26em; color: #A9692F">EXPERIENCE</div>
+<h2 id="exp-title" style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(48px, 5.4vw, 76px); line-height: .98; letter-spacing: -0.03em">The road<br><em style="font-weight: 400">so far.</em></h2>
+<div style="font-family: 'Caveat', cursive; font-size: 22px; color: #6B675F; transform: rotate(-2deg); align-self: flex-start">newest first ↓</div>
+</div>
+
+<div style="flex: 1 1 520px; min-width: 0; position: relative">
+<span aria-hidden="true" style="position: absolute; left: 26px; top: 26px; bottom: 26px; width: 0; border-left: 1.5px dashed #D4CAB6"></span>
+<ol style="position: relative; list-style: none; margin: 0; padding: 0">
+
+<!-- Role 1 -->
+<li class="tl-item" style="position: relative; display: flex; gap: 32px; padding-bottom: 56px">
+<div aria-hidden="true" style="position: relative; flex: 0 0 52px; display: flex; justify-content: center">
+<span class="tl-node" style="position: relative; z-index: 1; width: 52px; height: 52px; border-radius: 50%; border: 1px solid #DDD5C6; background: #FBFAF7; display: flex; align-items: center; justify-content: center; font-family: 'Geist', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .06em; color: #A9692F">01</span>
+</div>
+<div style="flex: 1; min-width: 0; padding-top: 4px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'Geist', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .04em; color: #6B675F">Sep 2025 – Present<span style="color: #B9AE9A"> · </span>Nairobi, Kenya</div>
+<h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(28px, 3vw, 36px); line-height: 1.1; letter-spacing: -0.015em">Bosch Digital Associate</h3>
+<div style="font-family: 'Geist', sans-serif; font-size: 17px; font-weight: 500; color: #A9692F">Robert Bosch East Africa</div>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #6B675F">
+• <strong>Regional IT &amp; Division Support:</strong> Managing and troubleshooting IT infrastructure for Mobility, Power Tools, and Home Comfort. Built custom Power Apps for FCM and BSH South Africa.<br>
+• <strong>Incident Management (Tier 1-3):</strong> Primary point of contact and final escalation for complex incidents via SMT/ITSP ticketing systems.<br>
+• <strong>Infrastructure &amp; Networks:</strong> Maintenance of office switches, APs, server room equipment, and peripheral devices.<br>
+• <strong>Asset Lifecycle &amp; ITFM:</strong> Managing hardware deployment, stock reconciliations, and cost recharging while keeping CMDB up-to-date.<br>
+• <strong>Process Automation:</strong> Designing Microsoft Power Platform workflows (Power Apps &amp; Power Automate) that streamline inventory and asset management.
+</p>
+</div>
+</li>
+
+<!-- Role 2 -->
+<li class="tl-item" style="position: relative; display: flex; gap: 32px; padding-bottom: 56px">
+<div aria-hidden="true" style="position: relative; flex: 0 0 52px; display: flex; justify-content: center">
+<span class="tl-node" style="position: relative; z-index: 1; width: 52px; height: 52px; border-radius: 50%; border: 1px solid #DDD5C6; background: #FBFAF7; display: flex; align-items: center; justify-content: center; font-family: 'Geist', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .06em; color: #A9692F">02</span>
+</div>
+<div style="flex: 1; min-width: 0; padding-top: 4px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'Geist', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .04em; color: #6B675F">Oct 2024 – Apr 2025<span style="color: #B9AE9A"> · </span>Nairobi, Kenya</div>
+<h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(28px, 3vw, 36px); line-height: 1.1; letter-spacing: -0.015em">IT Intern</h3>
+<div style="font-family: 'Geist', sans-serif; font-size: 17px; font-weight: 500; color: #A9692F">Tribe Hotels Group</div>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #6B675F">
+• <strong>Guest Services Support:</strong> Providing technical assistance for high-speed Wi-Fi, IPTV systems, and luxury in-room automation.<br>
+• <strong>Infrastructure &amp; LAN:</strong> Supporting maintenance of local networks, Access Points, and PBX telephony across property.<br>
+• <strong>Property Management Systems (PMS):</strong> Troubleshooting hospitality platforms such as Opera PMS for front desk and dining.<br>
+• <strong>Helpdesk &amp; Security:</strong> First-line support for corporate staff, peripheral maintenance, and monitoring network traffic to safeguard guest data and transactions.
+</p>
+</div>
+</li>
+
+<!-- Role 3 -->
+<li class="tl-item" style="position: relative; display: flex; gap: 32px; padding-bottom: 0px">
+<div aria-hidden="true" style="position: relative; flex: 0 0 52px; display: flex; justify-content: center">
+<span class="tl-node" style="position: relative; z-index: 1; width: 52px; height: 52px; border-radius: 50%; border: 1px solid #DDD5C6; background: #FBFAF7; display: flex; align-items: center; justify-content: center; font-family: 'Geist', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .06em; color: #A9692F">03</span>
+</div>
+<div style="flex: 1; min-width: 0; padding-top: 4px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'Geist', sans-serif; font-size: 13px; font-weight: 500; letter-spacing: .04em; color: #6B675F">Jul 2022 – Nov 2022<span style="color: #B9AE9A"> · </span>Nairobi, Kenya</div>
+<h3 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(28px, 3vw, 36px); line-height: 1.1; letter-spacing: -0.015em">IT Intern</h3>
+<div style="font-family: 'Geist', sans-serif; font-size: 17px; font-weight: 500; color: #A9692F">Cammosuh Logistics Limited</div>
+<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.65; color: #6B675F">
+• <strong>Task Automation:</strong> Developed scripts for repetitive IT tasks, saving team 10+ hours per week.<br>
+• <strong>Security Hardening:</strong> Identified security vulnerabilities across office hardware and implemented preventative patches.<br>
+• <strong>Hardware &amp; Data:</strong> Troubleshooting desktop systems and specialized thermal label printers; regular backups of logistics data.<br>
+• <strong>Network Uptime:</strong> Monitored office LAN/Wi-Fi connectivity vital for real-time tracking and port communications.
+</p>
+</div>
+</li>
+
+</ol>
+</div>
+</div>
+</section>
+
+<!-- Education & Certifications Section -->
+<section id="education" aria-labelledby="edu-title" style="max-width: 1160px; margin: 0 auto; padding: 24px 24px 88px">
+<div style="border-top: 1px solid #E3DED4; padding-top: 30px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap">
+<div>
+<div style="font-family: 'Geist', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .26em; color: #A9692F">FOUNDATIONS</div>
+<h2 id="edu-title" style="margin: 6px 0 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(40px, 5vw, 68px); line-height: 1; letter-spacing: -0.025em">Education &amp; <em style="font-weight: 400">credentials</em></h2>
+</div>
+<div style="font-family: 'Caveat', cursive; font-size: 22px; color: #6B675F; transform: rotate(-1.5deg)">lifelong learner ♡</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px">
+
+<!-- Degree -->
+<div style="background: #FFFFFF; border: 1.5px solid #1A1A1A; border-radius: 18px; padding: 28px 24px; box-shadow: 0 16px 32px -24px rgba(26,26,26,.35); position: relative; overflow: hidden">
+<span aria-hidden="true" style="position: absolute; top: 0; right: 28px; width: 64px; height: 12px; background: #F6D97F; border-radius: 0 0 6px 6px"></span>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A9692F; margin-bottom: 6px">Sep 2018 – Jun 2025</div>
+<h3 style="margin: 0 0 6px; font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 500">B.Sc. in Information Technology</h3>
+<div style="font-size: 15px; font-weight: 500; color: #1A1A1A; margin-bottom: 14px">Jomo Kenyatta University of Agriculture &amp; Technology</div>
+<div style="font-size: 13px; line-height: 1.6; color: #6B675F">
+<strong>Key Coursework:</strong> Database Management Systems (DBMS), Computer Networks &amp; Security, Software Engineering, Cloud Computing &amp; Virtualization, IT Project Management, Algorithms &amp; Data Structures.
+</div>
+</div>
+
+<!-- Moringa School -->
+<div style="background: #FFFFFF; border: 1.5px solid #1A1A1A; border-radius: 18px; padding: 28px 24px; box-shadow: 0 16px 32px -24px rgba(26,26,26,.35); position: relative; overflow: hidden">
+<span aria-hidden="true" style="position: absolute; top: 0; right: 28px; width: 64px; height: 12px; background: #E9A878; border-radius: 0 0 6px 6px"></span>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A9692F; margin-bottom: 6px">Apr 2023 – Aug 2024</div>
+<h3 style="margin: 0 0 6px; font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 500">Certification in Data Science</h3>
+<div style="font-size: 15px; font-weight: 500; color: #1A1A1A; margin-bottom: 14px">Moringa School</div>
+<div style="font-size: 13px; line-height: 1.6; color: #6B675F">
+<strong>Key Coursework:</strong> Machine Learning &amp; Deep Learning, Data Wrangling &amp; Cleaning, Statistical Analysis &amp; Hypothesis Testing, Big Data with PySpark, Storytelling &amp; Visualization, Model Deployment &amp; MLOps.
+</div>
+</div>
+
+<!-- 54 Collective -->
+<div style="background: #FFFFFF; border: 1.5px solid #1A1A1A; border-radius: 18px; padding: 28px 24px; box-shadow: 0 16px 32px -24px rgba(26,26,26,.35); position: relative; overflow: hidden">
+<span aria-hidden="true" style="position: absolute; top: 0; right: 28px; width: 64px; height: 12px; background: #2F855A; border-radius: 0 0 6px 6px"></span>
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #A9692F; margin-bottom: 6px">September 2024</div>
+<h3 style="margin: 0 0 6px; font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 500">EXPLORE Program Certificate</h3>
+<div style="font-size: 15px; font-weight: 500; color: #1A1A1A; margin-bottom: 14px">54 Collective Entrepreneur Academy</div>
+<div style="font-size: 13px; line-height: 1.6; color: #6B675F">
+<strong>Key Coursework:</strong> Business Analytics &amp; Data-Driven Decision Making, Startup Tech Strategies, Innovation &amp; Entrepreneurship in African tech ecosystems.
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Wins & Verified References Section -->
+<section id="wins" class="wins" aria-labelledby="wins-title" style="position: relative; overflow: hidden">
+<div style="position: relative; max-width: 1160px; margin: 0 auto; padding: 96px 24px 104px; display: flex; flex-direction: column; gap: 56px">
+<button type="button" id="starC" class="hidden-star" data-star aria-label="A hidden star" style="position: absolute; right: 24px; top: 8px; width: 30px; height: 30px; padding: 0; border: 0; background: none; cursor: pointer; z-index: 3"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#E8DFCC" stroke="#CDBFA6" stroke-width="1"></path></svg></button>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px 48px">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div class="wlabel" style="font-family: 'Geist', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .26em">RECOGNITION &amp; TRUST</div>
+<h2 id="wins-title" style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(52px, 6.4vw, 92px); line-height: .98; letter-spacing: -0.03em">Wins &amp;<br><em style="font-weight: 400">references.</em></h2>
+</div>
+<p class="wnote" style="margin: 0; max-width: 440px; font-family: 'Geist', sans-serif; font-size: 16px; line-height: 1.7">Proven leadership across regional enterprise IT operations, verified data science excellence, and trusted professional endorsements.</p>
+</div>
+
+<!-- Bento / Mosaic Grid -->
+<div class="wgrid" style="display: grid; grid-template-columns: 1.55fr 1fr 1fr; grid-template-rows: 320px 300px; grid-template-areas: 'a b c' 'a d d'; gap: 18px">
+
+<!-- Card A: Bosch Associate -->
+<article class="wcard" style="grid-area: a; position: relative; overflow: hidden; border-radius: 22px; min-height: 260px">
+<div class="wphoto wp1" style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding-bottom: 40px">
+<svg viewBox="0 0 200 200" width="160" height="160" opacity=".18" aria-hidden="true">
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#1A1A1A" stroke-width="12"/>
+  <rect x="80" y="30" width="40" height="140" rx="6" fill="#1A1A1A"/>
+</svg>
+</div>
+<div class="wscrim" aria-hidden="true" style="position: absolute; inset: 0"></div>
+<div style="position: absolute; left: 20px; right: 20px; top: 20px; display: flex; justify-content: space-between; align-items: flex-start; gap: 10px">
+<span class="wtag" style="padding: 6px 12px; border-radius: 999px; font-family: 'Geist', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .16em">★ REGIONAL IT</span>
+<span class="wyear" style="padding: 6px 12px; border-radius: 999px; font-family: 'Geist', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: .06em; backdrop-filter: blur(6px)">2025 – Present</span>
+</div>
+<div style="position: absolute; left: 32px; right: 24px; bottom: 30px; display: flex; flex-direction: column; gap: 8px">
+<div class="wkick" style="font-family: 'Geist', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .22em">DIGITAL TRANSFORMATION</div>
+<h3 class="wtitle" style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(32px, 3.4vw, 44px); line-height: 1.05; letter-spacing: -0.01em">Robert Bosch</h3>
+<div class="wsub" style="font-family: 'Geist', sans-serif; font-size: 14px; line-height: 1.55">Power Platform pioneer for FCM &amp; BSH East &amp; South Africa</div>
+</div>
+</article>
+
+<!-- Card B: Moringa Data Science -->
+<article class="wcard" style="grid-area: b; position: relative; overflow: hidden; border-radius: 22px; min-height: 260px">
+<div class="wphoto wp2" style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding-bottom: 40px">
+<svg viewBox="0 0 100 100" width="100" height="100" opacity=".2" aria-hidden="true">
+  <path d="M20 80 Q50 20 80 80" fill="none" stroke="#1A1A1A" stroke-width="8"/>
+</svg>
+</div>
+<div class="wscrim" aria-hidden="true" style="position: absolute; inset: 0"></div>
+<div style="position: absolute; left: 20px; right: 20px; top: 20px; display: flex; justify-content: space-between; align-items: flex-start; gap: 10px">
+<span class="wtag" style="padding: 6px 12px; border-radius: 999px; font-family: 'Geist', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .16em">HONOURS</span>
+<span class="wyear" style="padding: 6px 12px; border-radius: 999px; font-family: 'Geist', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: .06em; backdrop-filter: blur(6px)">2024</span>
+</div>
+<div style="position: absolute; left: 24px; right: 24px; bottom: 22px; display: flex; flex-direction: column; gap: 8px">
+<div class="wkick" style="font-family: 'Geist', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .22em">INTENSIVE GRADUATION</div>
+<h3 class="wtitle" style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 26px; line-height: 1.05; letter-spacing: -0.01em">Moringa School</h3>
+<div class="wsub" style="font-family: 'Geist', sans-serif; font-size: 14px; line-height: 1.55">Deep Learning, PySpark &amp; MLOps certification</div>
+</div>
+</article>
+
+<!-- Card C: 54 Collective -->
+<article class="wcard" style="grid-area: c; position: relative; overflow: hidden; border-radius: 22px; min-height: 260px">
+<div class="wphoto wp3" style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding-bottom: 40px">
+<svg viewBox="0 0 100 100" width="100" height="100" opacity=".2" aria-hidden="true">
+  <polygon points="50,15 90,85 10,85" fill="none" stroke="#1A1A1A" stroke-width="8"/>
+</svg>
+</div>
+<div class="wscrim" aria-hidden="true" style="position: absolute; inset: 0"></div>
+<div style="position: absolute; left: 20px; right: 20px; top: 20px; display: flex; justify-content: space-between; align-items: flex-start; gap: 10px">
+<span class="wtag" style="padding: 6px 12px; border-radius: 999px; font-family: 'Geist', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .16em">VENTURE COHORT</span>
+<span class="wyear" style="padding: 6px 12px; border-radius: 999px; font-family: 'Geist', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: .06em; backdrop-filter: blur(6px)">2024</span>
+</div>
+<div style="position: absolute; left: 24px; right: 24px; bottom: 22px; display: flex; flex-direction: column; gap: 8px">
+<div class="wkick" style="font-family: 'Geist', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .22em">EXPLORE ACADEMY</div>
+<h3 class="wtitle" style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 26px; line-height: 1.05; letter-spacing: -0.01em">54 Collective</h3>
+<div class="wsub" style="font-family: 'Geist', sans-serif; font-size: 14px; line-height: 1.55">Business analytics &amp; venture strategies</div>
+</div>
+</article>
+
+<!-- Card D: Verified References -->
+<article class="wcard" style="grid-area: d; position: relative; overflow: hidden; border-radius: 22px; min-height: 260px; background: #FFFFFF; border: 1.5px solid #1A1A1A">
+<div style="padding: 24px 28px; display: flex; flex-direction: column; gap: 16px; height: 100%; box-sizing: border-box; justify-content: center">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<div style="font-family: 'Geist', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .22em; color: #A9692F">PROFESSIONAL ENDORSEMENTS</div>
+<span style="font-family: 'Caveat', cursive; font-size: 20px; color: #6B675F">verified referees</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+  <div style="background: #FBFAF7; border: 1px solid #E8E4DC; border-radius: 12px; padding: 14px 16px">
+    <div style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600">Alfred Wambugu</div>
+    <div style="font-size: 13px; color: #6B675F">Purchasing Unit</div>
+    <div style="font-size: 12px; font-weight: 500; color: #A9692F">Robert Bosch East Africa</div>
+    <div style="font-size: 12px; font-family: 'JetBrains Mono', monospace; margin-top: 4px; color: #1A1A1A">+254 769 508 341</div>
+  </div>
+  <div style="background: #FBFAF7; border: 1px solid #E8E4DC; border-radius: 12px; padding: 14px 16px">
+    <div style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600">Joan Munyua</div>
+    <div style="font-size: 13px; color: #6B675F">Software Coordinator</div>
+    <div style="font-size: 12px; font-weight: 500; color: #A9692F">Tribe Hotels Group</div>
+    <div style="font-size: 12px; font-family: 'JetBrains Mono', monospace; margin-top: 4px; color: #1A1A1A">+254 725 535 674</div>
+  </div>
+  <div style="background: #FBFAF7; border: 1px solid #E8E4DC; border-radius: 12px; padding: 14px 16px">
+    <div style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600">Miss Gladys Kamosu</div>
+    <div style="font-size: 13px; color: #6B675F">CEO</div>
+    <div style="font-size: 12px; font-weight: 500; color: #A9692F">Cammosuh Logistics Limited</div>
+    <div style="font-size: 12px; font-family: 'JetBrains Mono', monospace; margin-top: 4px; color: #1A1A1A">+254 729 568 747</div>
+  </div>
+</div>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- Contact & Call to Action Section -->
+<section id="contact" aria-labelledby="contact-title" style="background: #F4EFE5; padding: 0 24px 22px">
+<div style="max-width: 1112px; margin: 0 auto; background: #1A1A1A; color: #FBFAF7; border-radius: 28px; padding: 72px 24px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px; position: relative; overflow: hidden">
+<svg viewBox="0 0 900 200" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; left: 0; top: 30px; width: 100%; height: 200px"><path class="march" d="M-20 170 C160 60 300 200 480 110 C620 40 700 60 760 70" fill="none" stroke="#6B675F" stroke-width="1.8" stroke-dasharray="6 8" stroke-linecap="round"></path></svg>
+<svg class="fly stk" width="96" height="80" viewBox="0 0 96 80" aria-hidden="true" style="position: absolute; right: 12%; top: 46px"><path d="M6 38 L90 6 L66 74 L44 50 Z" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.6" stroke-linejoin="round"></path><path d="M44 50 L90 6 L36 44" fill="#F6D97F" stroke="#1A1A1A" stroke-width="2.6" stroke-linejoin="round"></path></svg>
+<svg class="bob3" style="--r: -10deg; position: absolute; left: 9%; bottom: 40px" width="56" height="56" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#F6C6A4"></path></svg>
+
+<div style="position: relative; font-family: 'Caveat', cursive; font-size: 26px; color: #F6D97F">psst,</div>
+<h2 id="contact-title" style="position: relative; margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(38px, 5vw, 66px); line-height: 1.06; max-width: 760px">Got a <em style="font-weight: 400">complex dataset</em>? Let’s make it <em style="font-weight: 400; color: #F6D97F">actionable.</em></h2>
+<p style="position: relative; margin: 0; font-size: 17px; line-height: 1.6; color: #D6D0C4; max-width: 520px">Open to Data Science roles, Machine Learning engineering, IT infrastructure consulting, and innovative collaborations. My inbox is always open.</p>
+
+<div style="position: relative; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 6px">
+<a href="mailto:randellmwania@gmail.com" class="resbtn" style="background: #F6D97F; color: #1A1A1A; font-weight: 600; min-height: 52px; padding: 0 32px; border-radius: 999px; font-size: 15px">Say hello →</a>
+<a href="resume.html" target="_blank" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 32px; border-radius: 999px; border: 1.5px solid #FBFAF7; color: #FBFAF7; text-decoration: none; font-size: 15px; font-weight: 500; transition: transform .25s ease" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">View full résumé</a>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="ft" style="max-width: 1112px; margin: 18px auto 0; padding: 12px 8px 0; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px 24px; color: #1A1A1A">
+<a href="#top" class="ftbrand" style="display: inline-flex; align-items: center; gap: 12px; text-decoration: none; justify-self: start">
+<svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 C13 8 16 11 22 12 C16 13 13 16 12 22 C11 16 8 13 2 12 C8 11 11 8 12 2 Z" fill="#1A1A1A"></path></svg>
+<span style="font-family: 'Playfair Display', serif; font-weight: 600; font-size: 22px; letter-spacing: -0.01em">Randell Mwania</span>
+</a>
+<div style="text-align: center; font-size: 14px; line-height: 1.6; color: #4D4943; max-width: 300px">© 2026 Randell Mwania. Nairobi, Kenya.<br>Crafted with love &amp; code.</div>
+<nav aria-label="Social" class="ftnav" style="display: flex; align-items: center; justify-content: flex-end; gap: 8px">
+<!-- GitHub -->
+<a href="https://github.com/randellmwania" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub" title="GitHub" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px">
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#1A1A1A" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+</a>
+<!-- LinkedIn -->
+<a href="https://linkedin.com/in/randell-mwania" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn" title="LinkedIn" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px">
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#1A1A1A" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</a>
+<!-- Email -->
+<a href="mailto:randellmwania@gmail.com" class="icon-link" aria-label="Email" title="Email" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px">
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="2" width="22" height="20" rx="2" fill="#1A1A1A"/><path d="m5 8.5 7 6 7-6" fill="none" stroke="#FBFAF7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+<!-- Phone -->
+<a href="tel:+254757405648" class="icon-link" aria-label="Phone" title="+254 757 405 648" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="#1A1A1A"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+</a>
+</nav>
+</footer>
+</section>
+
+</div>
+
+<!-- Interactive Project Case Study Modal -->
+<div id="projectModal" class="modal-backdrop" onclick="if(event.target===this)closeModal()">
+  <div class="modal-content">
+    <button type="button" class="modal-close" onclick="closeModal()" aria-label="Close modal">×</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+// Project Case Study Data
+var projectData = {
+  coffee: {
+    title: "Coffee Leaf Image Classification",
+    tagline: "Deep Learning & Computer Vision with TensorFlow",
+    metrics: "90% accuracy in detecting infections early",
+    chips: ["Python", "TensorFlow", "CNN", "Image Processing", "Matplotlib", "Agritech"],
+    content: `
+      <p style="font-size:16px;line-height:1.75;color:#4D4943">In Kenya's vital agricultural sector, timely identification of coffee leaf diseases (such as coffee leaf rust and bacterial blight) can make the difference between a bumper harvest and total crop devastation. This project developed a high-performing Convolutional Neural Network (CNN) pipeline designed to identify infected plants directly from field imagery.</p>
+      <h4 style="font-family:'Playfair Display',serif;font-size:22px;margin:24px 0 10px">Methodology &amp; Architecture</h4>
+      <ul style="padding-left:20px;font-size:15px;line-height:1.7;color:#4D4943">
+        <li><strong>Data Augmentation &amp; Preprocessing:</strong> Normalized leaf image datasets with random rotations, zooming, and color jitters to simulate varying sunlight and field conditions.</li>
+        <li><strong>Convolutional Backbone:</strong> Built multiple Conv2D layers with ReLU activations, Batch Normalization, and MaxPooling to capture fine-grained leaf texture and lesion borders.</li>
+        <li><strong>Regularization:</strong> Incorporated Dropout (0.3) and L2 penalties to prevent overfitting on specific leaf background variations.</li>
+        <li><strong>Impact:</strong> Achieved a sustained <strong>90% test set accuracy</strong>, equipping agronomists and smallholder farmers with automated diagnostic intelligence.</li>
+      </ul>
+    `
+  },
+  movie: {
+    title: "Microsoft Movie Studio Market Analysis",
+    tagline: "Exploratory Data Analytics & Predictive Financial Modeling",
+    metrics: "Regression model estimating film revenue ROI",
+    chips: ["Python", "Pandas", "Matplotlib", "Seaborn", "Linear Regression", "Market Intel"],
+    content: `
+      <p style="font-size:16px;line-height:1.75;color:#4D4943">Entering the modern entertainment landscape requires strategic capital allocation and deep comprehension of audience appetite. This analytical study synthesized box-office performance, critical ratings, genre combinations, and release windows to inform the investment strategy of a newly launching film studio.</p>
+      <h4 style="font-family:'Playfair Display',serif;font-size:22px;margin:24px 0 10px">Key Analytical Insights</h4>
+      <ul style="padding-left:20px;font-size:15px;line-height:1.7;color:#4D4943">
+        <li><strong>Budget Elasticity:</strong> High production budgets only correlated strongly with global ROI when paired with universal franchise appeal or premium summer/holiday release windows.</li>
+        <li><strong>Genre Dominance:</strong> Animation and Action-Adventure demonstrated the highest international multiplier effect, whereas Thrillers and Horror delivered exceptional local ROI relative to conservative budgets.</li>
+        <li><strong>Predictive Framework:</strong> Engineered a multivariable linear predictive model to benchmark prospective screenplay investments against historical revenue distribution curves.</li>
+      </ul>
+    `
+  },
+  recommender: {
+    title: "Personalized Movie Recommendation System",
+    tagline: "Collaborative & Content-Based Filtering",
+    metrics: "+30% improvement in recommendation precision",
+    chips: ["Scikit-Learn", "Pandas", "Collaborative Filtering", "Cosine Similarity", "NumPy"],
+    content: `
+      <p style="font-size:16px;line-height:1.75;color:#4D4943">User churn in streaming and entertainment portals is heavily influenced by recommendation relevance. To combat choice overload, this system engineered a personalized dual recommendation engine that blends collaborative behavior with deep item-content semantics.</p>
+      <h4 style="font-family:'Playfair Display',serif;font-size:22px;margin:24px 0 10px">Algorithmic Design</h4>
+      <ul style="padding-left:20px;font-size:15px;line-height:1.7;color:#4D4943">
+        <li><strong>Collaborative Filtering:</strong> Utilized matrix factorization and user-item interaction similarity to surface titles that like-minded cohorts enjoyed.</li>
+        <li><strong>Content-Based Matching:</strong> Vectorized plot summaries, director/actor profiles, and thematic keywords using TF-IDF and Cosine Distance to address the cold-start problem.</li>
+        <li><strong>Hybrid Fusion:</strong> Weighted dynamic scores across both models, driving a documented <strong>30% increase in recommendation accuracy</strong> over baseline popular lists.</li>
+      </ul>
+    `
+  },
+  bosch: {
+    title: "Enterprise Process Automation & ITFM",
+    tagline: "Robert Bosch East Africa & South Africa Digital Transformation",
+    metrics: "10+ hours saved per week; full CMDB asset synchronization",
+    chips: ["Power Apps", "Power Automate", "ServiceNow", "SQL", "ITSM Tier 1-3", "CMDB"],
+    content: `
+      <p style="font-size:16px;line-height:1.75;color:#4D4943">At Robert Bosch East Africa, enterprise IT infrastructure powers three core business divisions: Mobility, Power Tools, and Home Comfort. As Bosch Digital Associate, I lead internal digital transformation projects that replace manual email and spreadsheet workflows with automated, compliant Power Platform solutions.</p>
+      <h4 style="font-family:'Playfair Display',serif;font-size:22px;margin:24px 0 10px">Operational Achievements</h4>
+      <ul style="padding-left:20px;font-size:15px;line-height:1.7;color:#4D4943">
+        <li><strong>Cross-Border Solutions:</strong> Engineered custom Power Apps for Facility Management (FCM) and BSH South Africa, addressing multinational compliance and equipment audit needs.</li>
+        <li><strong>Incident &amp; Asset Lifecycle:</strong> Served as final escalation point (Tier 1-3) via SMT/ITSP ticketing platforms while managing full IT asset lifecycles and CMDB accuracy.</li>
+        <li><strong>Workflow Automation:</strong> Automated approval chains and hardware requests through Power Automate, eliminating operational bottlenecks and saving dozens of administrative hours weekly.</li>
+      </ul>
+    `
+  }
+};
+
+function openModal(key) {
+  var data = projectData[key];
+  if(!data) return;
+  var html = `
+    <div style="font-family:'Geist',sans-serif;font-size:12px;font-weight:600;letter-spacing:.22em;color:#A9692F;margin-bottom:8px">CASE STUDY</div>
+    <h3 style="margin:0 0 8px;font-family:'Playfair Display',serif;font-size:clamp(30px,3.8vw,44px);line-height:1.05;letter-spacing:-0.02em">${data.title}</h3>
+    <div style="font-family:'Caveat',cursive;font-size:24px;color:#4D4943;margin-bottom:16px">${data.tagline}</div>
+    <div style="display:inline-block;padding:6px 14px;border-radius:999px;background:#FBF3DC;border:1.5px solid #1A1A1A;font-size:13px;font-weight:600;margin-bottom:20px">★ ${data.metrics}</div>
+    <div>${data.content}</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:24px">
+      ${data.chips.map(function(c){return `<span class="chip">${c}</span>`}).join('')}
+    </div>
+  `;
+  document.getElementById('modalBody').innerHTML = html;
+  document.getElementById('projectModal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('projectModal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+// Easter eggs, dark mode & signature animations
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var site=$('site'), dark=false;
+  
+  // Light Bulb Dark Mode Toggle
+  $('bulbBtn').addEventListener('click',function(){
+    dark=!dark;
+    site.classList.toggle('dark',dark);
+    document.body.style.background=dark?'#12100D':'#FBFAF7';
+    this.setAttribute('aria-pressed',dark);
+    this.setAttribute('aria-label',dark?'Turn the lights back on':'Turn the lights off (dark mode)');
+    $('halo').setAttribute('opacity',dark?1:0);
+    $('bulbFill').setAttribute('fill',dark?'#FFE27A':'#F6D97F');
+    $('bulbHint').textContent=dark?'lights back on? tap again':'psst, tap the bulb';
+  });
+
+  // Speech Bubble Toggle
+  var bub=false;
+  $('bubbleBtn').addEventListener('click',function(){
+    bub=!bub;
+    $('bubbleText').textContent=bub?'insights!':'data?';
+    $('bubbleFill').setAttribute('fill',bub?'#F6D97F':'#FFFFFF');
+    this.setAttribute('aria-label','Speech bubble: '+(bub?'insights!':'data?'));
+  });
+
+  // Hidden Easter Egg Stars
+  var found=0;
+  Array.prototype.forEach.call(document.querySelectorAll('[data-star]'),function(b){
+    b.addEventListener('click',function(){
+      if(b.classList.contains('found-star'))return;
+      b.className='found-star';
+      b.setAttribute('aria-label','Hidden star, found!');
+      var p=b.querySelector('path');
+      if(p){p.setAttribute('fill','#F6D97F');p.setAttribute('stroke','#1A1A1A')}
+      found++;
+    });
+  });
+
+  // Signature Intro Overlay
+  var introHTML=$('introHost').innerHTML, introT;
+  function closeIntro(){
+    clearTimeout(introT);
+    $('introHost').innerHTML='';
+    document.documentElement.style.overflow='';
+  }
+  function openIntro(){
+    clearTimeout(introT);
+    $('introHost').innerHTML=introHTML;
+    document.documentElement.style.overflow='hidden';
+    var b=$('introBtn');
+    if(b) b.addEventListener('click',closeIntro);
+    introT=setTimeout(closeIntro,4000);
+  }
+  $('logoBtn').addEventListener('click',openIntro);
+
+  var nav=(performance.getEntriesByType&&performance.getEntriesByType("navigation")[0])||{};
+  var fromInside=document.referrer&&document.referrer.indexOf(location.origin)===0;
+  var skip=nav.type==="back_forward"||(nav.type==="navigate"&&fromInside);
+  if(skip){$("introHost").innerHTML="";}else{openIntro();}
+})();
+
+// Scroll Progress & Subtle Parallax Ease-in
+(function(){
+  var bar=document.getElementById('progress');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items=[];
+  function add(sel,fn){
+    Array.prototype.forEach.call(document.querySelectorAll(sel),function(e,i){
+      items.push({e:e,dx:fn?fn(e,i):0,dy:46});
+      e.classList.add('fadeable');
+    });
+  }
+  add('#top');
+  add('#about>div>div');
+  Array.prototype.forEach.call(document.querySelectorAll('.proj'),function(pr,pi){
+    Array.prototype.forEach.call(pr.children,function(c,ci){
+      var first=ci===0,rev=pi%2===1;
+      items.push({e:c,dx:((first!==rev)?-1:1)*70,dy:30});
+      c.classList.add('fadeable');
+    });
+  });
+  add('#wins>div>div');
+  add('#contact>div');
+
+  var tick=false, clamp=function(v){return Math.min(1,Math.max(0,v))};
+  function run(){
+    tick=false;
+    var vh=window.innerHeight;
+    var max=document.documentElement.scrollHeight-vh;
+    if(bar)bar.style.transform='scaleX('+(max>0?clamp(window.scrollY/max):0)+')';
+    if(reduce)return;
+    items.forEach(function(it){
+      var r=it.e.getBoundingClientRect();
+      var out=clamp((r.bottom-90)/(vh*.32));
+      var inn=clamp((vh-r.top)/(vh*.3));
+      var ein=1-Math.pow(1-inn,3);
+      var o=Math.min(out,ein);
+      it.e.style.opacity=o.toFixed(3);
+      var up=(1-out)*-26, down=(1-ein)*it.dy, x=(1-ein)*it.dx;
+      it.e.style.transform=(o>=.999)?'none':'translate3d('+x.toFixed(1)+'px,'+(up+down).toFixed(1)+'px,0) scale('+(0.97+0.03*Math.min(out,ein)).toFixed(3)+')';
+    });
+  }
+  window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(run)}},{passive:true});
+  window.addEventListener('resize',run);
+  run();
+})();
+</script>
+</body>
+</html>
